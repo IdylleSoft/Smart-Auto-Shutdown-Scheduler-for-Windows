@@ -7,6 +7,18 @@
 ### Powerful Windows Automation for Smarter PC Management
 
 Automate your computer with intelligent timers, schedules and system monitoring.
+<br><br>
+🧠 Smart Automation • ⏱ Intelligent Timers • 📅 Advanced Scheduling • 🌍 5 Languages • 🔒 Privacy First • ⚡ Microsoft Store
+
+Download the official version from Microsoft Store.
+
+<p align="center">
+
+<a href="https://apps.microsoft.com/detail/XXXXXXXX">
+    <img src="https://img.shields.io/badge/Download-Microsoft%20Store-0078D4?style=for-the-badge&logo=microsoft&logoColor=white">
+</a>
+
+</p>
 
 ---
 

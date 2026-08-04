@@ -437,16 +437,4 @@ If you enjoy Smart Auto Shutdown & Scheduler, please consider:
 
 ---
 
-<div align="center">
-
-## Smart Automation Made Simple
-
-Designed for Windows.
-
-Built for Productivity.
-
-</div>
-
----
-
 *© 2026 Idylle Soft. All rights reserved. This repository is for showcase purposes only and does not contain source code.*

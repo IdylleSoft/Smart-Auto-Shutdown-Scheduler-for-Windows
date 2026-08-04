@@ -1,7 +1,3 @@
-<div align="center">
-
-<img src="assets/logo.png" width="128">
-
 # Smart Auto Shutdown & Scheduler
 
 ### Powerful Windows Automation for Smarter PC Management

@@ -1,13 +1,20 @@
+<div align="center">
+
 # Smart Auto Shutdown & Scheduler
 
 ### Powerful Windows Automation for Smarter PC Management
 
 Automate your computer with intelligent timers, schedules and system monitoring.
-<br><br>
-🧠 Smart Automation • ⏱ Intelligent Timers • 📅 Advanced Scheduling • 🌍 5 Languages • 🔒 Privacy First • ⚡ Microsoft Store
 
-Download the official version from Microsoft Store.
+<br>
 
+🧠 **Smart Automation** • ⏱ **Intelligent Timers** • 📅 **Advanced Scheduling** • 🌍 **5 Languages** • 🔒 **Privacy First** • ⚡ **Microsoft Store**
+
+<br>
+
+**Download the official version from Microsoft Store.**
+
+</div>
 <p align="center">
 
 <a href="https://apps.microsoft.com/detail/XXXXXXXX">

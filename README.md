@@ -26,6 +26,18 @@ Designed specifically for Windows 10 and Windows 11.
 
 ---
 
+## ✨ Highlights
+
+- 🧠 Smart Automation Engine
+- 🌍 Supports 5 Languages
+- 🌙 Dark Theme
+- ⚡ Lightweight & Fast
+- 🔒 Privacy Focused
+- 📦 Microsoft Store Ready
+- 💻 Windows 10 & Windows 11
+
+---
+
 # ✨ Key Features
 
 ## ⏱ Timers
@@ -276,16 +288,25 @@ Smart Auto Shutdown:
 
 ---
 
-# 🌍 Multi-language Support
+# 🌍 Multi-Language Support
 
-Designed for users around the world.
+Smart Auto Shutdown & Scheduler is designed for users worldwide.
 
-Current supported languages include:
+The application currently supports **5 languages**, allowing users to work comfortably in their native language.
 
-- English
-- Turkish
+### Supported Languages
 
-More languages will be added in future updates.
+🇺🇸 English
+
+🇹🇷 Turkish
+
+🇩🇪 German
+
+🇫🇷 French
+
+🇪🇸 Spanish
+
+> More languages may be added in future updates.
 
 ---
 
@@ -318,26 +339,6 @@ More languages will be added in future updates.
 ## Settings
 
 <img src="assets/settings.png">
-
----
-
-# 💡 Why Choose Smart Auto Shutdown?
-
-✅ Modern Design
-
-✅ Lightweight
-
-✅ Fast Performance
-
-✅ Reliable Scheduling
-
-✅ Intelligent Automation
-
-✅ Secure
-
-✅ Offline Operation
-
-✅ Microsoft Store Ready
 
 ---
 
@@ -433,18 +434,6 @@ If you enjoy Smart Auto Shutdown & Scheduler, please consider:
 ⭐ Following future updates
 
 ⭐ Sharing it with others
-
----
-
-# 📜 License
-
-Copyright © 2026
-
-All Rights Reserved.
-
-This software is proprietary.
-
-Unauthorized copying, reverse engineering, redistribution or modification of this software is prohibited.
 
 ---
 

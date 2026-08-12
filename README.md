@@ -327,7 +327,7 @@ The application currently supports **5 languages**, allowing users to work comfo
 
 # 📦 Installation
 
-The recommended installation method is through Microsoft Store.
+The recommended installation method is through <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">Microsoft Store</a>.
 
 Benefits include:
 

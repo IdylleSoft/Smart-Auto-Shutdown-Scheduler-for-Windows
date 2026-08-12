@@ -17,7 +17,7 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 </div>
 <p align="center">
 
-<a href="https://apps.microsoft.com/detail/XXXXXXXX">
+<a href="https://apps.microsoft.com/detail/9N622WG5KQGD">
     <img src="https://img.shields.io/badge/Download-Microsoft%20Store-0078D4?style=for-the-badge&logo=microsoft&logoColor=white">
 </a>
 
@@ -322,38 +322,6 @@ The application currently supports **5 languages**, allowing users to work comfo
 🇪🇸 Spanish
 
 > More languages may be added in future updates.
-
----
-
-# 📸 Screenshots
-
-## Main Dashboard
-
-<img src="assets/main.png">
-
----
-
-## Countdown Timer
-
-<img src="assets/timer.png">
-
----
-
-## Scheduler
-
-<img src="assets/scheduler.png">
-
----
-
-## Smart Rules
-
-<img src="assets/rules.png">
-
----
-
-## Settings
-
-<img src="assets/settings.png">
 
 ---
 

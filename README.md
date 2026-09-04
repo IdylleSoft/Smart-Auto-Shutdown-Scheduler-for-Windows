@@ -25,6 +25,10 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 ---
 
+<img src="assets/hero.png">
+
+---
+
 # 🚀 Overview
 
 Smart Auto Shutdown & Scheduler is an advanced Windows automation utility that helps you control your computer using intelligent timers, schedules, monitoring conditions and custom rules.
@@ -118,18 +122,6 @@ Automatically perform actions when CPU usage reaches your chosen threshold.
 
 ---
 
-## 🧠 Memory (RAM) Monitoring
-
-Monitor memory usage and trigger actions when RAM usage becomes too high or returns to normal.
-
-### Example uses
-
-- Restart the PC after memory-intensive workloads.
-- Prevent overnight memory leaks.
-- Schedule maintenance after large applications finish.
-
----
-
 ## 💾 Disk Activity Monitoring
 
 Monitor read/write activity on your storage devices.
@@ -180,18 +172,6 @@ Monitor how long no keyboard or mouse input is detected.
 
 ---
 
-## 💤 System Idle Detection
-
-Monitor complete system inactivity.
-
-### Example uses
-
-- Automatically sleep your computer overnight.
-- Reduce unnecessary power consumption.
-- Lock the workstation after a period of inactivity.
-
----
-
 ## 🔋 Battery Monitoring
 
 Monitor battery percentage and charging status.
@@ -214,32 +194,6 @@ Monitor selected files or folders for changes.
 - Wait until exported videos appear.
 - Detect completed downloads.
 - Trigger actions after log files are generated.
-
----
-
-## 📅 Intelligent Scheduling
-
-Create one-time or recurring automation schedules.
-
-### Example uses
-
-- Shut down every night.
-- Restart every Sunday.
-- Lock your PC during work breaks.
-- Hibernate after business hours.
-
----
-
-## ⏱ Countdown Timer
-
-The fastest way to automate your computer.
-
-### Example uses
-
-- Shut down after 30 minutes.
-- Sleep after finishing a movie.
-- Restart after installing updates.
-- Lock the PC before leaving.
 
 ---
 
@@ -407,19 +361,15 @@ The app uses the Microsoft Edge **WebView2 Runtime**. Install or update the Ever
 
 # ❓ Frequently Asked Questions
 
-## Does the application require Internet?
+## Can the app work without Internet?
 
-No.
-
-Everything works locally.
+Yes. Timers, schedules, routines, and monitors run locally. Internet access is used only for the optional support and product events described in the Privacy & Diagnostics section.
 
 ---
 
-## Does it collect data?
+## What information can be sent to the developer?
 
-No.
-
-No personal information is collected.
+The app may send anonymous app-start and purchase-flow events, feedback you submit, and optional anonymous error reports. It does not upload your personal files, passwords, monitored paths, or program names. See the Privacy Policy for details.
 
 ---
 

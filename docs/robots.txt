@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/sitemap.xml

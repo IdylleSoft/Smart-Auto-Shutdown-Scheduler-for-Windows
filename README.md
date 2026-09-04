@@ -8,7 +8,11 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 <br>
 
-🧠 **Smart Automation** • ⏱ **Intelligent Timers** • 📅 **Advanced Scheduling** • 🌍 **6 Languages** • 🔒 **Privacy First** • ⚡ **Microsoft Store**
+<p align="center">
+  🧠 <strong>Smart Automation</strong>&nbsp;&nbsp;&nbsp; ⏱ <strong>Intelligent Timers</strong>&nbsp;&nbsp;&nbsp; 📅 <strong>Advanced Scheduling</strong>
+  <br><br>
+  🌍 <strong>6 Languages</strong>&nbsp;&nbsp;&nbsp; 🔒 <strong>Privacy First</strong>&nbsp;&nbsp;&nbsp; ⚡ <strong>Microsoft Store</strong>
+</p>
 
 <br>
 
@@ -23,9 +27,14 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 </p>
 
----
-
-<img src="assets/hero.png">
+<!-- Replace the placeholder URL below before publishing the trial download. -->
+<p align="center">
+  <a href="https://example.com/auto-shutdown-scheduler-trial">
+    <img src="https://img.shields.io/badge/Download-15--Day%20Pro%20Trial-FF7A00?style=for-the-badge&logo=windows&logoColor=white" alt="Download the 15-Day Pro Trial">
+  </a>
+  <br>
+  <strong>Try every Pro feature free for 15 days — no Microsoft Store account required.</strong>
+</p>
 
 ---
 

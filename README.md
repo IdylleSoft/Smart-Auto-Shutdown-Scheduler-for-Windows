@@ -25,10 +25,6 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 ---
 
-<img src="assets/hero.png">
-
----
-
 # 🚀 Overview
 
 Smart Auto Shutdown & Scheduler is an advanced Windows automation utility that helps you control your computer using intelligent timers, schedules, monitoring conditions and custom rules.

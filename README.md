@@ -2,7 +2,7 @@
 
 <h1 align="center">
   <a href="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/">
-    <img src="https://img.shields.io/badge/Smart%20Auto%20Shutdown%20%26%20Scheduler-6D5DFB?style=for-the-badge&amp;logo=windows11&amp;logoColor=white" alt="Smart Auto Shutdown &amp; Scheduler">
+    <img src="./README-header.svg" width="840" alt="Smart Auto Shutdown &amp; Scheduler">
   </a>
 </h1>
 
@@ -32,6 +32,8 @@ Automate your computer with intelligent timers, schedules and system monitoring.
   <br>
   <strong>Try every Pro feature free for 15 days — no Microsoft Store account required.</strong>
 </p>
+
+<br>
 
 <p align="center">
   <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">

@@ -8,7 +8,7 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 <br>
 
-🧠 **Smart Automation** • ⏱ **Intelligent Timers** • 📅 **Advanced Scheduling** • 🌍 **5 Languages** • 🔒 **Privacy First** • ⚡ **Microsoft Store**
+🧠 **Smart Automation** • ⏱ **Intelligent Timers** • 📅 **Advanced Scheduling** • 🌍 **6 Languages** • 🔒 **Privacy First** • ⚡ **Microsoft Store**
 
 <br>
 
@@ -27,8 +27,6 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 <img src="assets/hero.png">
 
-</div>
-
 ---
 
 # 🚀 Overview
@@ -44,12 +42,15 @@ Designed specifically for Windows 10 and Windows 11.
 ## ✨ Highlights
 
 - 🧠 Smart Automation Engine
-- 🌍 Supports 5 Languages
+- 🌍 Supports 6 Languages
 - 🌙 Dark Theme
 - ⚡ Lightweight & Fast
 - 🔒 Privacy Focused
 - 📦 Microsoft Store Ready
 - 💻 Windows 10 & Windows 11
+- 🖥 Desktop Countdown Widget
+- 🔐 Password Protection & Pre-Action Warnings
+- 📌 System Tray Support
 
 ---
 
@@ -74,6 +75,27 @@ Designed specifically for Windows 10 and Windows 11.
 - Specific Date & Time
 - Repeat Tasks
 - One-Time Tasks
+
+---
+
+## 🧰 Productivity & Safety Tools
+
+- **Program Monitor** — run an action when a selected application closes.
+- **Custom Rule (Pro)** — combine compatible monitor conditions with AND / OR logic.
+- **Desktop Countdown Widget** — keep the remaining time and scheduled action visible while the app is minimized.
+- **Password Protection** — require a password before protected actions can run.
+- **Pre-Action Warnings** — receive a final countdown and cancel an upcoming action when needed.
+- **System Tray Support** — keep an active timer, schedule, routine, or monitor running while the main window is hidden.
+
+---
+
+## 🖥 Desktop Countdown Widget
+
+Optionally show a compact desktop widget in the top-right corner while an action is active. It displays the remaining time and the selected action without requiring the main window to stay open.
+
+- Enable or disable it from **Settings**.
+- Click the widget to bring the main app back into view.
+- The widget stays out of the way while the main window is open and is useful when the app is running in the background.
 
 ---
 
@@ -150,15 +172,15 @@ Monitor whether audio is currently playing.
 
 ---
 
-## ⌨️ Keyboard & Mouse Activity
+## 🧍 Inactivity Monitoring
 
-Detect user activity.
+Monitor how long no keyboard or mouse input is detected.
 
 ### Example uses
 
 - Lock your PC after inactivity.
-- Shut down if nobody uses the computer for several hours.
-- Save energy automatically.
+- Shut down if nobody uses the computer for a chosen period.
+- Sleep the computer after you leave your desk.
 
 ---
 
@@ -183,18 +205,6 @@ Monitor battery percentage and charging status.
 - Hibernate when battery becomes critically low.
 - Shut down before battery is completely drained.
 - Prevent unexpected data loss.
-
----
-
-## 🔌 Charging Status
-
-React when the charger is connected or disconnected.
-
-### Example uses
-
-- Start automation only while charging.
-- Prevent battery discharge overnight.
-- Run maintenance tasks only when external power is available.
 
 ---
 
@@ -284,22 +294,27 @@ Features include:
 - Dark Theme
 - Responsive Layout
 - System Tray Support
+- Desktop Countdown Widget
+- In-App Notifications and Pre-Action Warnings
 - Native Windows Experience
 - Fast Navigation
 
 ---
 
-# 🔒 Security
+# 🔒 Privacy & Diagnostics
 
-Your privacy matters.
+Core automation runs locally on your PC and does not require an account. The app does not display advertisements or upload your personal files, passwords, monitored file paths, or program names.
 
-Smart Auto Shutdown:
+The app uses a Cloudflare Worker for a small set of support and product events:
 
-- Does NOT collect personal information
-- Does NOT display advertisements
-- Does NOT require cloud services
-- Does NOT include telemetry
-- Works completely offline
+- An anonymous app-start event containing only the app version, used for aggregate usage statistics.
+- Pro purchase-flow events, including whether a purchase attempt completed.
+- Feedback that you explicitly submit from the app.
+- Optional anonymous error reports, controlled from Settings.
+
+These events are relayed to the developer's private Telegram notification channel. If the Worker is unavailable, timers, schedules, routines, and monitors continue to run locally; only the related notification cannot be delivered.
+
+For full details, see the <a href="https://idyllesoft.github.io/IdylleSoft-Privacy/Shutdown&amp;Scheduler_privacy-policy.html">Privacy Policy</a>.
 
 ---
 
@@ -307,7 +322,7 @@ Smart Auto Shutdown:
 
 Smart Auto Shutdown & Scheduler is designed for users worldwide.
 
-The application currently supports **5 languages**, allowing users to work comfortably in their native language.
+The application currently supports **6 languages**, allowing users to work comfortably in their native language.
 
 ### Supported Languages
 
@@ -321,11 +336,26 @@ The application currently supports **5 languages**, allowing users to work comfo
 
 🇪🇸 Spanish
 
+🇷🇺 Russian
+
 > More languages may be added in future updates.
 
 ---
 
 # 📦 Installation
+
+## 🛍 Microsoft Store Edition & Pro
+
+Smart Auto Shutdown & Scheduler is available as a free download from Microsoft Store. **Pro** is an optional in-app add-on that unlocks advanced automation tools.
+
+| Feature | Free | Pro |
+| --- | :---: | :---: |
+| Countdown timer and one-time scheduling | ✓ | ✓ |
+| CPU Monitor | ✓ | ✓ |
+| Routine scheduling | — | ✓ |
+| Inactivity, Audio, Network, Disk I/O, File/Folder, Program, and Battery monitors | — | ✓ |
+| Custom Rule (AND / OR conditions) | — | ✓ |
+| Desktop widget, system tray, password protection, and pre-action warnings | ✓ | ✓ |
 
 The recommended installation method is through <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">Microsoft Store</a>.
 
@@ -353,16 +383,29 @@ Recommended
 
 ---
 
-# 🔄 Future Updates
+# 🛠 Troubleshooting
 
-Planned improvements include:
+## Notifications are not appearing
 
-- More automation triggers
-- Additional actions
-- More language packs
-- Improved notifications
-- Enhanced scheduling
-- UI improvements
+- Check that notifications are enabled in the app's **Settings**.
+- In Windows, make sure Focus Assist / Do Not Disturb is not suppressing notifications.
+- Pre-action warnings still appear in the app window when Windows notifications are disabled, so you can cancel a pending action there.
+
+## The app opens blank or does not start
+
+The app uses the Microsoft Edge **WebView2 Runtime**. Install or update the Evergreen WebView2 Runtime from Microsoft, then restart the app. Installing the latest Windows updates can also resolve a missing or outdated runtime.
+
+## The tray icon is not visible
+
+- Make sure the app is still running; an active timer, schedule, routine, or monitor can continue from the system tray.
+- Check the hidden-icons area next to the Windows clock.
+- Use the tray icon to restore the main window when it is hidden.
+
+## Start with Windows is not working
+
+- Turn **Start with Windows** off and on again in the app's **Settings**.
+- Check that Windows has not disabled the app under **Settings → Apps → Startup**.
+- Restart Windows once after changing the setting to confirm the startup behavior.
 
 ---
 

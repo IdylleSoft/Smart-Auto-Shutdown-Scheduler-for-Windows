@@ -1,6 +1,10 @@
 <div align="center">
 
-# Smart Auto Shutdown & Scheduler
+<h1 align="center">
+  <a href="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/">
+    <img src="https://img.shields.io/badge/Smart%20Auto%20Shutdown%20%26%20Scheduler-6D5DFB?style=for-the-badge&amp;logo=windows11&amp;logoColor=white" alt="Smart Auto Shutdown &amp; Scheduler">
+  </a>
+</h1>
 
 ### Powerful Windows Automation for Smarter PC Management
 
@@ -16,24 +20,29 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 <br>
 
-**Download the official version from Microsoft Store.**
+**Download Auto Shutdown & Scheduler for Windows.**
 
 </div>
 <p align="center">
 
-<a href="https://apps.microsoft.com/detail/9N622WG5KQGD">
-    <img src="https://img.shields.io/badge/Download-Microsoft%20Store-0078D4?style=for-the-badge&logo=microsoft&logoColor=white">
-</a>
-
-</p>
-
 <!-- Replace the placeholder URL below before publishing the trial download. -->
-<p align="center">
   <a href="https://example.com/auto-shutdown-scheduler-trial">
     <img src="https://img.shields.io/badge/Download-15--Day%20Pro%20Trial-FF7A00?style=for-the-badge&logo=windows&logoColor=white" alt="Download the 15-Day Pro Trial">
   </a>
   <br>
   <strong>Try every Pro feature free for 15 days — no Microsoft Store account required.</strong>
+</p>
+
+<p align="center">
+  <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">
+    <img src="https://img.shields.io/badge/Download-Microsoft%20Store-0078D4?style=for-the-badge&logo=microsoft&logoColor=white">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/">🌐 Visit the website</a>
+  &nbsp;•&nbsp;
+  <a href="mailto:idyllesoft@outlook.com">✉ Contact support</a>
 </p>
 
 ---
@@ -407,6 +416,10 @@ Fully compatible.
 ---
 
 # ❤️ Support
+
+🌐 <a href="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/">Visit the official website</a>
+
+✉ <a href="mailto:idyllesoft@outlook.com">idyllesoft@outlook.com</a>
 
 If you enjoy Smart Auto Shutdown & Scheduler, please consider:
 

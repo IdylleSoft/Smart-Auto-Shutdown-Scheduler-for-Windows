@@ -1,10 +1,6 @@
 <div align="center">
 
-<h1 align="center">
-  <a href="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/">
-    <img src="./README-header.svg" width="840" alt="Smart Auto Shutdown &amp; Scheduler">
-  </a>
-</h1>
+# [Smart Auto Shutdown & Scheduler](https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/)
 
 ### Powerful Windows Automation for Smarter PC Management
 
@@ -20,25 +16,27 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 <br>
 
-**Download Auto Shutdown & Scheduler for Windows.**
+**Choose the version that fits you.**
 
 </div>
 <p align="center">
 
 <!-- Replace the placeholder URL below before publishing the trial download. -->
   <a href="https://example.com/auto-shutdown-scheduler-trial">
-    <img src="https://img.shields.io/badge/Download-15--Day%20Pro%20Trial-FF7A00?style=for-the-badge&logo=windows&logoColor=white" alt="Download the 15-Day Pro Trial">
+    <img src="https://img.shields.io/badge/TRY%20FULL%20PRO-15--DAY%20FREE%20TRIAL-FF7A00?style=for-the-badge&logo=windows&logoColor=white" alt="Try the full Pro version free for 15 days">
   </a>
   <br>
-  <strong>Try every Pro feature free for 15 days — no Microsoft Store account required.</strong>
+  <sub>Every Pro feature · Standalone Windows app · No Microsoft Store account required</sub>
 </p>
 
 <br>
 
 <p align="center">
   <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">
-    <img src="https://img.shields.io/badge/Download-Microsoft%20Store-0078D4?style=for-the-badge&logo=microsoft&logoColor=white">
+    <img src="https://img.shields.io/badge/GET%20FREE%20VERSION-MICROSOFT%20STORE-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Get the free version from Microsoft Store">
   </a>
+  <br>
+  <sub>Free edition · Optional Pro upgrade available inside Microsoft Store</sub>
 </p>
 
 <p align="center">

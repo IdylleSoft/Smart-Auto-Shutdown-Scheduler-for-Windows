@@ -22,7 +22,7 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 <p align="center">
 
 <!-- Replace the placeholder URL below before publishing the trial download. -->
-  <a href="https://github.com/IdylleSoft/Smart-Auto-Shutdown-Scheduler-for-Windows/releases/download/Trial/Smart-Auto-Shutdown-Scheduler_Trial.zip">
+  <a href="https://github.com/IdylleSoft/Smart-Auto-Shutdown-Scheduler-for-Windows/releases/download/Trial/Smart-Auto-Shutdown-Scheduler-Trial-Setup.exe">
     <img src="https://img.shields.io/badge/TRY%20FULL%20PRO-15--DAY%20FREE%20TRIAL-FF7A00?style=for-the-badge&logo=windows&logoColor=white" alt="Try the full Pro version free for 15 days">
   </a>
   <br>

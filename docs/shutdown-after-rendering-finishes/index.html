@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Automatically shut down your Windows PC after rendering, exporting, or compiling finishes. Use a CPU monitor with a threshold and duration to avoid guessing when heavy work is done." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#070916" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="canonical" href="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/shutdown-after-rendering-finishes/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/shutdown-after-rendering-finishes/" />
+    <meta property="og:site_name" content="Auto Shutdown &amp; Scheduler" />
+    <meta property="og:title" content="Shut Down Your PC After Rendering Finishes" />
+    <meta property="og:description" content="Use a CPU threshold and duration to shut down Windows after a render, export, or compile job has finished." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Shut Down Your PC After Rendering Finishes" />
+    <meta name="twitter:description" content="Use a CPU threshold and duration to shut down Windows after a render, export, or compile job has finished." />
+    <title>Shut Down Your PC After Rendering Finishes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=20260906-1" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Shut Down Your PC After Rendering Finishes",
+        "description": "A practical guide to using a CPU monitor to shut down Windows after rendering, exporting, or compiling work completes.",
+        "mainEntityOfPage": "https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/shutdown-after-rendering-finishes/",
+        "author": { "@type": "Organization", "name": "Idylle Soft" },
+        "publisher": { "@type": "Organization", "name": "Idylle Soft" }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true"></div>
+    <header class="site-header guide-header">
+      <a class="brand" href="../" aria-label="Auto Shutdown &amp; Scheduler home">
+        <span class="brand-mark">⏻</span>
+        <span>Auto Shutdown <em>&amp;</em> Scheduler</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../#features">Features</a>
+        <a href="../#pro">Pro</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <a class="header-store" href="https://apps.microsoft.com/detail/9N622WG5KQGD">Microsoft Store <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="guide-hero section-wrap">
+        <p class="eyebrow"><span></span> CREATIVE &amp; DEVELOPMENT WORKFLOW GUIDE</p>
+        <h1>Render all night.<br /><i>Let the PC stop when work does.</i></h1>
+        <p class="guide-lede">Long renders, exports, and compiles often keep the CPU busy until the real work is complete. A CPU-based rule can turn the PC off after that load settles—without forcing you to guess an exact finish time.</p>
+      </section>
+
+      <div class="guide-layout section-wrap">
+        <article class="guide-article">
+          <h2 id="why">Why CPU is a useful completion signal</h2>
+          <p>Many rendering, exporting, and compiling jobs place sustained demand on the CPU. When the job ends, CPU usage often drops and remains low. Auto Shutdown &amp; Scheduler’s <strong>CPU Monitor</strong> can wait for that combination: a load below your threshold for a duration you choose.</p>
+          <p>The duration is important. A momentary dip does not always mean a job is finished; applications can pause between stages, wait for disk activity, or briefly use less CPU before continuing. Requiring low usage for several minutes makes the rule calmer and more reliable.</p>
+          <div class="guide-note"><strong>This is a signal, not a promise:</strong> CPU load is a good fit when your particular render or compile visibly uses the CPU. Test it once while you are present before trusting it overnight.</div>
+
+          <h2 id="setup">Set up a CPU Monitor</h2>
+          <ol class="guide-steps">
+            <li>Open <strong>CPU Monitor</strong> and choose the action you want after the work is finished, such as Shut Down or Sleep.</li>
+            <li>Set a low CPU threshold based on your normal idle usage. A threshold below the machine’s ordinary background load would never trigger.</li>
+            <li>Set a sustained duration, then start the monitor and watch it through a short test job.</li>
+          </ol>
+          <p>A practical starting point is a low threshold that is comfortably above your normal idle CPU use, combined with several minutes of sustained low activity. Adjust it after seeing how your own software behaves at the end of a render.</p>
+
+          <h2 id="test">Test the finish line before leaving</h2>
+          <p>Run a small export or compilation first. Observe CPU usage during the active phase, then watch what happens after completion. If the CPU stays above the threshold because of unrelated background work, raise the threshold slightly. If it drops during the middle of a job, increase the required low-usage duration.</p>
+          <p>Keep the pre-action warning enabled for shutdown or restart actions. It gives you time to cancel if you see that the job was only between stages, or if the output needs one final check.</p>
+
+          <h2 id="limits">Know when CPU is not the right monitor</h2>
+          <p>Some workflows use the GPU far more than the CPU. In that case, CPU usage may be low while the rendering work is still in progress. Similarly, a program can continue writing a large file or uploading an export after CPU activity has fallen.</p>
+          <p>For those cases, prefer the application’s own completion setting when available, or use a signal that matches the last step of the workflow. The best automation is not the one with the most conditions—it is the one whose signal clearly represents “this work is finished.”</p>
+
+          <section class="guide-cta" aria-label="Download options">
+            <h2>Stop guessing when the render will end</h2>
+            <p>Watch CPU load, wait for it to settle, and keep a final cancellation path before the PC powers down. Start with the free CPU Monitor from Microsoft Store.</p>
+            <div class="hero-actions">
+              <a class="button button-store" href="https://apps.microsoft.com/detail/9N622WG5KQGD"><b>⊞</b> Microsoft Store</a>
+              <a class="button button-trial" href="https://github.com/IdylleSoft/Smart-Auto-Shutdown-Scheduler-for-Windows/releases/download/Trial/Smart-Auto-Shutdown-Scheduler-Trial-Setup.exe"><b>↓</b> Download 15-Day Pro Trial</a>
+            </div>
+          </section>
+
+          <section class="guide-faq" id="faq">
+            <h2>Render shutdown FAQ</h2>
+            <details>
+              <summary>Can my PC shut down after rendering finishes?</summary>
+              <p>Yes, if the render creates sustained CPU usage. Use a CPU Monitor that waits for CPU load to remain below your chosen threshold for a set duration.</p>
+            </details>
+            <details>
+              <summary>What CPU threshold should I use?</summary>
+              <p>Start slightly above your PC’s normal idle CPU level. The best value depends on your background applications, so test it with a short real job.</p>
+            </details>
+            <details>
+              <summary>How long should CPU stay low before shutdown?</summary>
+              <p>Use several minutes at first. This helps avoid reacting to a brief pause between render, export, encoding, or disk-writing stages.</p>
+            </details>
+            <details>
+              <summary>Will this work for GPU rendering?</summary>
+              <p>Not always. A GPU-heavy job can run while CPU usage remains low. Confirm how your own renderer behaves, and choose a signal that reflects the actual task.</p>
+            </details>
+          </section>
+        </article>
+
+        <aside class="guide-aside" aria-label="On this page">
+          <p>ON THIS PAGE</p>
+          <a href="#why">Why CPU works</a>
+          <a href="#setup">Set up the monitor</a>
+          <a href="#test">Test the finish line</a>
+          <a href="#limits">Know the limits</a>
+          <a href="#faq">FAQ</a>
+          <a href="../auto-shutdown-after-inactivity/">← Shut down after inactivity</a>
+          <a href="../">← Back to product overview</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand" href="../"><span class="brand-mark">⏻</span><span>Auto Shutdown <em>&amp;</em> Scheduler</span></a>
+      <p>Windows automation for quieter, more intentional workflows.</p>
+      <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">Get it from Microsoft Store ↗</a>
+    </footer>
+  </body>
+</html>

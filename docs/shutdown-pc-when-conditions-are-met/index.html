@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Automatically shut down a Windows PC when multiple conditions are met. Combine compatible CPU, network, disk, and other monitor signals with AND or OR rules." />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#070916" />
+    <link rel="icon" href="../favicon.ico" sizes="any" />
+    <link rel="canonical" href="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/shutdown-pc-when-conditions-are-met/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/shutdown-pc-when-conditions-are-met/" />
+    <meta property="og:site_name" content="Auto Shutdown &amp; Scheduler" />
+    <meta property="og:title" content="Shut Down Your PC When Conditions Are Met" />
+    <meta property="og:description" content="Combine compatible Windows automation signals with AND or OR logic for a more precise shutdown rule." />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Shut Down Your PC When Conditions Are Met" />
+    <meta name="twitter:description" content="Combine compatible Windows automation signals with AND or OR logic for a more precise shutdown rule." />
+    <title>Shut Down Your PC When Conditions Are Met</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css?v=20260906-1" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Shut Down Your PC When Conditions Are Met",
+        "description": "A practical guide to creating AND/OR condition-based Windows automations.",
+        "mainEntityOfPage": "https://idyllesoft.github.io/Smart-Auto-Shutdown-Scheduler-for-Windows/shutdown-pc-when-conditions-are-met/",
+        "author": { "@type": "Organization", "name": "Idylle Soft" },
+        "publisher": { "@type": "Organization", "name": "Idylle Soft" }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="sky" aria-hidden="true"></div>
+    <header class="site-header guide-header">
+      <a class="brand" href="../" aria-label="Auto Shutdown &amp; Scheduler home">
+        <span class="brand-mark">⏻</span>
+        <span>Auto Shutdown <em>&amp;</em> Scheduler</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="../#features">Features</a>
+        <a href="../#pro">Pro</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <a class="header-store" href="https://apps.microsoft.com/detail/9N622WG5KQGD">Microsoft Store <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="guide-hero section-wrap">
+        <p class="eyebrow"><span></span> WINDOWS AUTOMATION GUIDE</p>
+        <h1>Wait for the right signals.<br /><i>Then let the PC act.</i></h1>
+        <p class="guide-lede">A single monitor answers one question. A Custom Rule combines two to four compatible conditions, so a shutdown can wait for a clearer picture of what “finished” actually means.</p>
+      </section>
+
+      <div class="guide-layout section-wrap">
+        <article class="guide-article">
+          <h2 id="why">When one condition is not enough</h2>
+          <p>A low CPU reading can mean that a render is finished—or that it is merely waiting to write files. Quiet network traffic can mean a download is done—or that it has paused for a moment. Combining signals makes it less likely that an automatic action runs too early.</p>
+          <p>Auto Shutdown &amp; Scheduler’s <strong>Custom Rule</strong> brings together two to four compatible monitor conditions. You choose the action and decide whether every condition must match, or whether any one of them is enough.</p>
+          <div class="guide-note"><strong>Use a Custom Rule only when it solves a real ambiguity:</strong> if one monitor already represents the end of the task clearly, keep the automation simple.</div>
+
+          <h2 id="logic">Understand AND and OR logic</h2>
+          <p>The logic is simple, but the consequences are different:</p>
+          <ol class="guide-steps">
+            <li><strong>AND:</strong> every selected condition must be true. This is safer when you need evidence that several kinds of activity have settled.</li>
+            <li><strong>OR:</strong> any selected condition can start the action. This suits alternative stopping points, but it should be used carefully because the first matching condition wins.</li>
+            <li><strong>Start small:</strong> combine two conditions first. Add more only when they improve the decision instead of making it harder to understand.</li>
+          </ol>
+          <p>For example, an AND rule can wait until CPU usage is low <em>and</em> network traffic is quiet. That is more deliberate than treating either signal alone as proof that all work has finished.</p>
+
+          <h2 id="examples">Build a rule around your workflow</h2>
+          <p>Good rules describe a specific, observable finish line. A few useful patterns:</p>
+          <ol class="guide-steps">
+            <li><strong>Long transfer plus post-processing:</strong> wait for CPU and network activity to settle before sleeping or shutting down.</li>
+            <li><strong>Creative work:</strong> use CPU monitoring alongside another compatible signal when a renderer has more than one active stage.</li>
+            <li><strong>Multiple monitored tasks:</strong> use OR only when either condition genuinely means it is safe to take the same action.</li>
+          </ol>
+          <p>Conditions must be compatible in the app. That guardrail prevents combinations that do not represent a meaningful, reliable automation.</p>
+
+          <h2 id="test">Test before you trust it overnight</h2>
+          <p>First enable the component monitors individually and observe their behavior. Learn what normal idle CPU, network, disk, or other activity looks like on your PC. Then create the Custom Rule with an action that is easy to recover from, such as Lock or Sleep, before relying on Shut Down.</p>
+          <p>Keep a pre-action warning enabled for disruptive actions. If a condition becomes true during an unexpected pause, the warning gives you a final chance to cancel and refine the rule.</p>
+
+          <h2 id="review">Keep rules readable</h2>
+          <p>Name the intent in your own words before building the automation: “shut down only after the transfer and processing are both calm.” If you cannot explain the rule in one sentence, it is probably too complex.</p>
+          <p>Review Custom Rules whenever your workflow changes. New background apps, different export settings, or a changed network connection can alter the signals that made an old rule dependable.</p>
+
+          <section class="guide-cta" aria-label="Download options">
+            <h2>Build automation with fewer guesses</h2>
+            <p>Combine compatible monitors, choose AND or OR deliberately, and keep the final action under your control. Try every Pro feature free for 15 days.</p>
+            <div class="hero-actions">
+              <a class="button button-trial" href="https://github.com/IdylleSoft/Smart-Auto-Shutdown-Scheduler-for-Windows/releases/download/Trial/Smart-Auto-Shutdown-Scheduler-Trial-Setup.exe"><b>↓</b> Download 15-Day Pro Trial</a>
+              <a class="button button-store" href="https://apps.microsoft.com/detail/9N622WG5KQGD"><b>⊞</b> Microsoft Store</a>
+            </div>
+          </section>
+
+          <section class="guide-faq" id="faq">
+            <h2>Custom Rule FAQ</h2>
+            <details>
+              <summary>What is a Custom Rule?</summary>
+              <p>It combines two to four compatible monitor conditions with AND or OR logic, then runs the action you choose when the rule matches.</p>
+            </details>
+            <details>
+              <summary>Should I use AND or OR?</summary>
+              <p>Use AND when all selected signals must be true before acting. Use OR only when any one of the selected conditions independently makes the same action safe.</p>
+            </details>
+            <details>
+              <summary>Can I combine CPU and network activity?</summary>
+              <p>Yes. A common example is waiting for low CPU usage and quiet network activity, which can provide more confidence than either signal alone.</p>
+            </details>
+            <details>
+              <summary>How do I avoid an accidental shutdown?</summary>
+              <p>Test each monitor separately, begin with a recoverable action, and keep the pre-action warning enabled while you refine the rule.</p>
+            </details>
+          </section>
+        </article>
+
+        <aside class="guide-aside" aria-label="On this page">
+          <p>ON THIS PAGE</p>
+          <a href="#why">Why combine conditions</a>
+          <a href="#logic">AND and OR logic</a>
+          <a href="#examples">Useful patterns</a>
+          <a href="#test">Test safely</a>
+          <a href="#review">Keep rules readable</a>
+          <a href="#faq">FAQ</a>
+          <a href="../shutdown-after-rendering-finishes/">← Shut down after rendering</a>
+          <a href="../">← Back to product overview</a>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <a class="brand" href="../"><span class="brand-mark">⏻</span><span>Auto Shutdown <em>&amp;</em> Scheduler</span></a>
+      <p>Windows automation for quieter, more intentional workflows.</p>
+      <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">Get it from Microsoft Store ↗</a>
+    </footer>
+  </body>
+</html>

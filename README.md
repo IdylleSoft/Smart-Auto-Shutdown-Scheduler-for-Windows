@@ -11,7 +11,7 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 <p align="center">
   🧠 <strong>Smart Automation</strong>&nbsp;&nbsp;&nbsp; ⏱ <strong>Intelligent Timers</strong>&nbsp;&nbsp;&nbsp; 📅 <strong>Advanced Scheduling</strong>
   <br><br>
-  🌍 <strong>6 Languages</strong>&nbsp;&nbsp;&nbsp; 🔒 <strong>Privacy First</strong>&nbsp;&nbsp;&nbsp; ⚡ <strong>Microsoft Store</strong>
+  🌍 <strong>7 Languages</strong>&nbsp;&nbsp;&nbsp; 🔒 <strong>Privacy First</strong>&nbsp;&nbsp;&nbsp; ⚡ <strong>Microsoft Store</strong>
 </p>
 
 <br>
@@ -22,7 +22,7 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 <p align="center">
 
 <!-- Replace the placeholder URL below before publishing the trial download. -->
-  <a href="https://github.com/IdylleSoft/Smart-Auto-Shutdown-Scheduler-for-Windows/releases/download/Trial/Smart-Auto-Shutdown-Scheduler-Trial-Setup.exe">
+  <a href="https://example.com/auto-shutdown-scheduler-trial">
     <img src="https://img.shields.io/badge/TRY%20FULL%20PRO-15--DAY%20FREE%20TRIAL-FF7A00?style=for-the-badge&logo=windows&logoColor=white" alt="Try the full Pro version free for 15 days">
   </a>
   <br>
@@ -60,7 +60,7 @@ Designed specifically for Windows 10 and Windows 11.
 ## ✨ Highlights
 
 - 🧠 Smart Automation Engine
-- 🌍 Supports 6 Languages
+- 🌍 Supports 7 Languages
 - 🌙 Dark Theme
 - ⚡ Lightweight & Fast
 - 🔒 Privacy Focused
@@ -275,7 +275,7 @@ Core automation runs locally on your PC and does not require an account. The app
 
 The app uses a Cloudflare Worker for a small set of support and product events:
 
-- An anonymous app-start event containing only the app version, used for aggregate usage statistics.
+- App-start and product/support events include the app version and a locally generated persistent pseudonymous identifier (for example, `SAS-XXXX-XXXX-XXXX-XXXX`) to distinguish events from the same Windows user profile. It is random, is not a hardware fingerprint, and contains no name, account, email, device name, IP address, file path, setting, or hardware identifier. Cloudflare D1 stores only that pseudonymous identifier, first/last-seen times, the latest version, and launch count for aggregate launch statistics.
 - Pro purchase-flow events, including whether a purchase attempt completed.
 - Feedback that you explicitly submit from the app.
 - Optional anonymous error reports, controlled from Settings.
@@ -290,7 +290,7 @@ For full details, see the <a href="https://idyllesoft.github.io/IdylleSoft-Priva
 
 Smart Auto Shutdown & Scheduler is designed for users worldwide.
 
-The application currently supports **6 languages**, allowing users to work comfortably in their native language.
+The application currently supports **7 languages**, allowing users to work comfortably in their native language.
 
 ### Supported Languages
 
@@ -305,6 +305,8 @@ The application currently supports **6 languages**, allowing users to work comfo
 🇪🇸 Spanish
 
 🇷🇺 Russian
+
+🇯🇵 Japanese
 
 > More languages may be added in future updates.
 
@@ -387,7 +389,7 @@ Yes. Timers, schedules, routines, and monitors run locally. Internet access is u
 
 ## What information can be sent to the developer?
 
-The app may send anonymous app-start and purchase-flow events, feedback you submit, and optional anonymous error reports. It does not upload your personal files, passwords, monitored paths, or program names. See the Privacy Policy for details.
+The app may send app-start and purchase-flow events, feedback you submit, and optional anonymous error reports. These events include a local persistent pseudonymous identifier used only to correlate events from the same Windows user profile; they do not upload your personal files, passwords, monitored paths, program names, account, or hardware identifier. See the Privacy Policy for details.
 
 ---
 

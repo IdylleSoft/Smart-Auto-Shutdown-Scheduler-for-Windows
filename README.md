@@ -11,7 +11,7 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 <p align="center">
   🧠 <strong>Smart Automation</strong>&nbsp;&nbsp;&nbsp; ⏱ <strong>Intelligent Timers</strong>&nbsp;&nbsp;&nbsp; 📅 <strong>Advanced Scheduling</strong>
   <br><br>
-  🌍 <strong>7 Languages</strong>&nbsp;&nbsp;&nbsp; 🔒 <strong>Privacy First</strong>&nbsp;&nbsp;&nbsp; ⚡ <strong>Microsoft Store</strong>
+  🌍 <strong>11 Languages</strong>&nbsp;&nbsp;&nbsp; 🔒 <strong>Privacy First</strong>&nbsp;&nbsp;&nbsp; ⚡ <strong>Microsoft Store</strong>
 </p>
 
 <br>
@@ -59,7 +59,7 @@ Designed specifically for Windows 10 and Windows 11.
 ## ✨ Highlights
 
 - 🧠 Smart Automation Engine
-- 🌍 Supports 7 Languages
+- 🌍 Supports 11 Languages
 - 🌙 Dark Theme
 - ⚡ Lightweight & Fast
 - 🔒 Privacy Focused
@@ -100,9 +100,10 @@ Designed specifically for Windows 10 and Windows 11.
 - **Program Monitor** — run an action when a selected application closes.
 - **Custom Rule (Pro)** — combine compatible monitor conditions with AND / OR logic.
 - **Desktop Countdown Widget** — keep the remaining time and scheduled action visible while the app is minimized.
-- **Password Protection** — require a password before protected actions can run.
+- **Password Protection** — require a password before an active task can be stopped or cancelled.
 - **Pre-Action Warnings** — receive a final countdown and cancel an upcoming action when needed.
 - **System Tray Support** — keep an active timer, schedule, routine, or monitor running while the main window is hidden.
+- **Action History** — review the latest 100 active, executed, cancelled, and failed runs stored locally on your device.
 
 ---
 
@@ -152,9 +153,9 @@ Monitor read/write activity on your storage devices.
 
 ---
 
-## 🌐 Network Speed Monitoring
+## 🌐 Network & Internet Connection Monitoring
 
-Watch your internet activity in real time.
+Watch network activity in real time or trigger an action when the internet connection is completely unavailable for a selected duration.
 
 ### Example uses
 
@@ -162,6 +163,7 @@ Watch your internet activity in real time.
 - Turn off the PC after large cloud uploads.
 - Wait until OneDrive synchronization completes.
 - Automatically sleep the computer when network traffic becomes idle.
+- Lock, sleep, or shut down the computer after its internet connection has remained unavailable for a chosen period.
 
 ---
 
@@ -203,7 +205,7 @@ Monitor battery percentage and charging status.
 
 ## 📂 File & Folder Monitoring
 
-Monitor selected files or folders for changes.
+Monitor a selected file or folder and trigger an action after no changes have been detected for the chosen stability period. Every new change resets the waiting timer.
 
 ### Example uses
 
@@ -259,7 +261,7 @@ Designed with a modern interface focused on simplicity and productivity.
 Features include:
 
 - Dark Theme
-- Responsive Layout
+- Optimized 1280 × 720 Desktop Layout
 - System Tray Support
 - Desktop Countdown Widget
 - In-App Notifications and Pre-Action Warnings
@@ -289,7 +291,7 @@ For full details, see the <a href="https://idyllesoft.github.io/IdylleSoft-Priva
 
 Smart Auto Shutdown & Scheduler is designed for users worldwide.
 
-The application currently supports **7 languages**, allowing users to work comfortably in their native language.
+The application currently supports **11 languages**, allowing users to work comfortably in their native language.
 
 ### Supported Languages
 
@@ -306,6 +308,14 @@ The application currently supports **7 languages**, allowing users to work comfo
 🇷🇺 Russian
 
 🇯🇵 Japanese
+
+🇮🇹 Italian
+
+🇧🇷 Portuguese (Brazil)
+
+🇵🇱 Polish
+
+🇨🇳 Simplified Chinese
 
 > More languages may be added in future updates.
 

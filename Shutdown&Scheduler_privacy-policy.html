@@ -1,0 +1,991 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy | Auto Shutdown &amp; Scheduler</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --zemin: #f5f7fb;
+      --kart: #ffffff;
+      --metin: #172033;
+      --ikincil: #56627a;
+      --kenar: #dbe1ec;
+      --vurgu: #4f46e5;
+      --bilgi: #eef2ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --zemin: #0d1220;
+        --kart: #151c2e;
+        --metin: #edf2ff;
+        --ikincil: #aeb8ce;
+        --kenar: #2b3650;
+        --vurgu: #9b87ff;
+        --bilgi: #1b2440;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--zemin);
+      color: var(--metin);
+      font: 16px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+    main { width: min(920px, calc(100% - 32px)); margin: 36px auto 64px; }
+    header, section, nav {
+      margin-bottom: 18px;
+      padding: 26px;
+      border: 1px solid var(--kenar);
+      border-radius: 16px;
+      background: var(--kart);
+    }
+    h1 { margin: 0 0 8px; font-size: clamp(28px, 5vw, 42px); line-height: 1.15; }
+    h2 { margin: 0 0 12px; font-size: 23px; line-height: 1.3; }
+    h3 { margin: 22px 0 6px; font-size: 18px; }
+    p, ul { margin-top: 8px; }
+    li + li { margin-top: 6px; }
+    a { color: var(--vurgu); }
+    code { overflow-wrap: anywhere; }
+    .meta { color: var(--ikincil); }
+    .ozet { padding: 18px; border-left: 4px solid var(--vurgu); border-radius: 10px; background: var(--bilgi); }
+    .etiket {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--bilgi);
+      color: var(--vurgu);
+      font-size: 13px;
+      font-weight: 700;
+    }
+    nav ol { columns: 2; padding-left: 22px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; }
+    th, td { padding: 11px; border: 1px solid var(--kenar); text-align: left; vertical-align: top; }
+    th { width: 29%; }
+    footer { color: var(--ikincil); text-align: center; }
+    [hidden] { display: none !important; }
+    .language-switcher {
+      position: sticky;
+      z-index: 20;
+      top: 10px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+      margin: 0 0 14px;
+      padding: 8px;
+      border: 1px solid var(--kenar);
+      border-radius: 13px;
+      background: color-mix(in srgb, var(--kart) 92%, transparent);
+      box-shadow: 0 8px 26px rgb(0 0 0 / 10%);
+      backdrop-filter: blur(14px);
+    }
+    .language-switcher button {
+      min-width: 92px;
+      padding: 8px 13px;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      background: transparent;
+      color: var(--ikincil);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .language-switcher button[aria-pressed="true"] {
+      border-color: color-mix(in srgb, var(--vurgu) 42%, transparent);
+      background: var(--bilgi);
+      color: var(--vurgu);
+    }
+    @media (max-width: 680px) {
+      main { width: min(100% - 20px, 920px); margin-top: 10px; }
+      header, section, nav { padding: 19px; border-radius: 12px; }
+      nav ol { columns: 1; }
+      table, tbody, tr, th, td { display: block; width: 100%; }
+      th { border-bottom: 0; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="language-switcher" role="group" aria-label="Policy language">
+    <button type="button" data-language="en" aria-pressed="true">English</button>
+    <button type="button" data-language="tr" aria-pressed="false">Türkçe</button>
+  </div>
+
+  <article id="policy-en" lang="en">
+    <header>
+      <span class="etiket">Official privacy policy</span>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        <strong>Application:</strong> Auto Shutdown &amp; Scheduler<br>
+        <strong>Developer:</strong> Idylle Soft<br>
+        <strong>Last updated:</strong> October 10, 2026
+      </p>
+      <div class="ozet">
+        <strong>In short:</strong> The App does not require an account, display advertising, or
+        automatically upload your personal files to the cloud. Automation runs locally on your device. However,
+        the App may send limited technical data through a Cloudflare Worker to the developer's
+        private Telegram chat and Cloudflare D1 database for launch statistics, certain product interactions,
+        feedback you submit, and error reports when reporting remains enabled.
+        Feedback may include an optional screenshot that you choose to attach. Disabling error reporting
+        does not disable launch or product-interaction events. Cloudflare derives
+        an approximate country name from the connection's IP address. The IP address itself is not
+        included in Telegram messages or the App's Cloudflare D1 record.
+      </div>
+    </header>
+
+    <nav aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#en-scope">Scope and data controller</a></li>
+        <li><a href="#en-principles">Core principles</a></li>
+        <li><a href="#en-local">Data stored on your device</a></li>
+        <li><a href="#en-id">Pseudonymous identifier</a></li>
+        <li><a href="#en-events">Automatic technical events</a></li>
+        <li><a href="#en-history">Local action history</a></li>
+        <li><a href="#en-feedback">Feedback and language requests</a></li>
+        <li><a href="#en-errors">Error reports</a></li>
+        <li><a href="#en-purchase">Pro and Microsoft Store</a></li>
+        <li><a href="#en-updates">Update checks</a></li>
+        <li><a href="#en-providers">Service providers</a></li>
+        <li><a href="#en-retention">Retention and deletion</a></li>
+        <li><a href="#en-security">Security</a></li>
+        <li><a href="#en-rights">Your choices and rights</a></li>
+        <li><a href="#en-children">Children's privacy</a></li>
+        <li><a href="#en-changes">Changes to this policy</a></li>
+        <li><a href="#en-contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <section id="en-scope">
+      <h2>1. Scope and data controller</h2>
+      <p>
+        This policy explains the processing of data in the Free and Pro editions of the Auto
+        Shutdown &amp; Scheduler Windows desktop application distributed by Idylle Soft through
+        Microsoft Store. It covers local operation, notifications sent
+        through the Cloudflare Worker, records in Cloudflare D1 and the developer's management panel,
+        Telegram messages and attachments, and Microsoft Store interactions where applicable.
+      </p>
+      <p>
+        The responsible contact for privacy questions and data requests is
+        <a href="mailto:idyllesoft@outlook.com">idyllesoft@outlook.com</a>.
+      </p>
+    </section>
+
+    <section id="en-principles">
+      <h2>2. Core principles</h2>
+      <ul>
+        <li>No account, registration, or cloud sign-in is required to use the App.</li>
+        <li>Timers, schedules, routines, monitors, and custom rules run locally on your device.</li>
+        <li>The App displays no advertising and does not sell or rent personal data for advertising.</li>
+        <li>The App does not automatically upload personal file contents. Stop-protection passwords and Microsoft account credentials are not sent to the developer. Information you voluntarily include in feedback or an attached screenshot is transmitted with that submission.</li>
+        <li>Transmitted data is limited to the purposes described below.</li>
+      </ul>
+    </section>
+
+    <section id="en-local">
+      <h2>3. Data stored on your device</h2>
+      <table>
+        <tr>
+          <th>Settings</th>
+          <td>Language, thresholds, selected action, notifications, widget, warning, and similar preferences are stored in a local settings file.</td>
+        </tr>
+        <tr>
+          <th>Action history</th>
+          <td>The latest 100 runs are stored locally with their source, action, status, time, and a limited configuration summary.</td>
+        </tr>
+        <tr>
+          <th>Logs</th>
+          <td>Runtime and diagnostic records are stored in size-limited local log files.</td>
+        </tr>
+        <tr>
+          <th>Error queue</th>
+          <td>Error reports that could not be delivered may remain in a local file for later retry, and duplicate errors may be consolidated.</td>
+        </tr>
+        <tr>
+          <th>Technical-event queue</th>
+          <td>Undelivered launch and product-interaction events may be saved locally for retry. Event identifiers and delivery status help prevent duplicate notifications.</td>
+        </tr>
+        
+        <tr>
+          <th>Password</th>
+          <td>A password set for Stop-action protection is held only in application memory and is forgotten when the App closes.</td>
+        </tr>
+      </table>
+      <p>
+        Most of these records are located under <code>%LOCALAPPDATA%\OtomatikKapatici\</code>.
+        Depending on the distribution method, the Start with Windows preference may be stored by
+        Windows StartupTask infrastructure or in a Registry location belonging to the current
+        Windows user.
+      </p>
+      <p>This policy page stores only your selected policy language in the browser's local storage (<code>sas-privacy-language</code>). This preference is not sent to the developer.</p>
+    </section>
+
+    <section id="en-id">
+      <h2>4. Persistent pseudonymous identifier</h2>
+      <p>
+        The App creates a random identifier in the form <code>SAS-XXXX-XXXX-XXXX-XXXX</code> to
+        distinguish limited events originating from the same Windows user profile. It is not a
+        hardware fingerprint and contains no name, email address, Microsoft account, user name,
+        computer name, file path, IP address, or device serial number.
+      </p>
+      <p>
+        The identifier is protected with Windows DPAPI and may be stored in the current user's Registry,
+        <code>%PROGRAMDATA%\IdylleSoft\Smart Auto Shutdown &amp; Scheduler\telemetry_device_id.dat</code>,
+        and the Store package's <code>LocalState</code> or <code>LocalCache\Local\IdylleSoft</code>
+        folders under <code>%LOCALAPPDATA%\Packages\</code>, where writable. Copies can restore one
+        another. Uninstalling the App or deleting only one copy may therefore not reset the identifier.
+        A new identifier is created when no usable copy can be recovered.
+      </p>
+      <p>
+        Events can be linked to the same identifier over time. These records are pseudonymous,
+        not guaranteed to be irreversibly anonymous. Deleting local copies does not delete records
+        already held in D1 or Telegram.
+      </p>
+    </section>
+
+    <section id="en-events">
+      <h2>5. Automatic technical events and product interactions</h2>
+      <p>
+        To understand whether the App operates correctly and how its features are used, some of the
+        following events may be sent automatically to the developer:
+      </p>
+      <ul>
+        <li>App launch and edition type (Free or Pro); a launch event alone does not confirm that the interface opened correctly</li>
+        
+        <li>Display of the Pro offer when you choose to explore Pro, or dismissal through its Close button; the offer is not automatically displayed on first launch or when restoring the App from the system tray</li>
+        <li>Selection of Update now or Later in an update prompt</li>
+        <li>Opening the product website from the About screen</li>
+        <li>Opening the rating prompt from the moon image</li>
+        <li>Display of the rating prompt and the user's rate/remind-later choice</li>
+      </ul>
+      
+      <h3>Technical fields that may accompany these events</h3>
+      <ul>
+        <li>App version and pseudonymous identifier</li>
+        <li>Windows version</li>
+        <li>App language and Windows system language</li>
+        <li>Country name and country code approximately determined by Cloudflare</li>
+      </ul>
+      <p>
+        The App does not collect a city, district, postal code, street address, GPS location, or
+        coordinates. Cloudflare technically sees the source IP address when the internet connection
+        is established and uses it to determine the country. The developer does not add that IP
+        address to the Telegram message or the Cloudflare D1 record.
+      </p>
+      <p>
+        D1 may store the identifier, first/last-seen times, launch count, version, country, and last
+        event; country-level device statistics; a
+        device-linked timeline of launches, critical errors, and feedback. Event and
+        delivery identifiers, timestamps, and delivery status are used for retries and deduplication.
+        The developer can review these records in an access-controlled management panel to diagnose
+        startup problems, follow repeated errors, and understand aggregate use.
+      </p>
+      <div class="ozet">
+        <strong>Scope of the error-reporting switch:</strong> It controls error/crash reports only.
+        It does not turn off automatic launch or product-interaction events. Interface-readiness
+        timing, JavaScript error/recovery counts as health measurements, session tracking, and
+        heartbeat telemetry are no longer transmitted. The current App has no separate in-App
+        switch for the remaining automatic events. The local technical-event queue may
+        continue retrying them after error reporting is disabled.
+      </div>
+    </section>
+
+    <section id="en-history">
+      <h2>6. Local action history</h2>
+      <p>
+        The latest 100 automation-history records are stored locally. The current notification
+        service does not forward action-history events to Telegram or save them as remote action
+        history; queued action-history events from older editions are accepted and ignored.
+        Separately, an enabled error report can include the active task type and diagnostic context
+        described in section 8. This is not a remote copy of the local action history.
+      </p>
+    </section>
+
+    <section id="en-feedback">
+      <h2>7. Feedback and new-language requests</h2>
+      <p>
+        Feedback and new-language requests are transmitted only after you press the relevant Send
+        button. Disabling error reporting does not prevent a submission that you initiate.
+      </p>
+      <p>A submission may include:</p>
+      <ul>
+        <li>Your message, selected category, or requested language</li>
+        <li>App version, pseudonymous identifier, App language, and system language</li>
+        <li>Windows version/build, architecture, screen resolution, DPI/scaling, and WebView2 version</li>
+        <li>Country name determined by Cloudflare</li>
+      </ul>
+      <p>
+        If you voluntarily type a name, email address, or other personal information into your
+        message, it will be transmitted as part of that message. The App does not require you to
+        provide such information.
+      </p>
+      <h3>Optional screenshot</h3>
+      <p>
+        A screenshot is captured only when you select the screenshot option. The capture targets
+        the App window's on-screen rectangle, not the entire desktop. Content overlapping that
+        rectangle may also be visible. You can preview or remove the attachment before sending.
+        Capturing or previewing does not itself upload the screenshot; it is transmitted when you
+        send the feedback with the attachment included.
+      </p>
+      <p>
+        Screenshots are not automatically masked. Visible text, file/program names, or personal
+        information can be included. Review the image and do not submit passwords or other
+        sensitive information. Feedback and attachments pass through the Cloudflare Worker to
+        the developer's private Telegram chat. D1 stores feedback text, category, technical context,
+        identifier, version, languages, country, submission time, and attachment metadata. The image
+        itself is stored in Telegram, not as an image in D1; its Telegram file identifier lets the
+        access-controlled management panel retrieve and display it through the Worker.
+      </p>
+    </section>
+
+    <section id="en-errors">
+      <h2>8. Error and crash reports</h2>
+      <p>
+        Current application versions report only directly evidenced critical failures.
+        Interface-health and session telemetry are discontinued. Successful recovery and missing
+        heartbeat data do not produce error reports. Previously collected health/session records
+        and their dedicated tables have been removed from the active D1 database. Legacy health
+        and session events arriving from older versions are accepted and ignored, without new
+        storage or Telegram notifications. Previously delivered Telegram messages or copies in
+        backups are not automatically erased by deleting the active D1 records.
+      </p>
+      <div class="ozet">
+        <strong>Default: enabled.</strong> You can disable the option labelled anonymous error reports in Settings. Reports can still be linked by the pseudonymous identifier; they are not guaranteed to be irreversibly anonymous.
+      </div>
+      <p>Only critical failures with direct technical evidence are reported: startup, automation engine, Windows action, unrecoverable WebView2, or fatal native failures. JSON reports are sent to Telegram and grouped in D1. Offline reports remain in the bounded retry queue.</p>
+      <p>
+        The Worker also stores error groups, diagnostic samples, occurrence counts, first/last-seen
+        times, and device associations in D1 for review in the access-controlled management panel.
+        Disabling error reporting clears its pending local queue but does not delete previously
+        delivered reports or the separate technical-event queue described in section 5.
+      </p>
+      <p>An error report may include:</p>
+      <ul>
+        <li>Error title, sanitized details, and traceback</li>
+        <li>App, Python, Windows, and WebView2 versions</li>
+        <li>Diagnostic information such as architecture, core count, memory, and current CPU usage</li>
+        <li>Observed critical failure, technical evidence, build identity and limited diagnostic logs</li>
+        <li>Pseudonymous identifier, App/system language, and country name</li>
+      </ul>
+      <p>
+        User names, computer names, and file paths are processed for masking before transmission.
+        The monitored program name, selected file path, and personal file contents are not intended
+        to be included in an error report. However, no automated masking method can guarantee a
+        perfect result for every possible free-form error message.
+      </p>
+    </section>
+
+    <section id="en-purchase">
+      <h2>9. Pro purchase and Microsoft Store</h2>
+      <p>
+        When you initiate the Pro purchase flow, the developer may be notified that the purchase
+        window opened and whether the process succeeded, was cancelled, remained incomplete, or
+        could not start. The event may include the App version, pseudonymous identifier, technical
+        environment information, country name, and a Microsoft Store result code.
+      </p>
+      <p>
+        Payment is handled by Microsoft. The App does not see or store your card number, payment
+        details, or Microsoft account password. Processing performed by Microsoft Store is governed
+        by Microsoft's own privacy terms.
+      </p>
+    </section>
+
+    <section id="en-updates">
+      <h2>10. Version and update checks</h2>
+      <ul>
+        <li>The Microsoft Store edition may check update availability through Windows/Microsoft Store infrastructure.</li>
+        <li>If you choose to open an update link, Microsoft Store may process its standard connection data.</li>
+        <li>Your Update now or Later response in the update prompt may be reported as a product event.</li>
+      </ul>
+    </section>
+
+    <section id="en-providers">
+      <h2>11. Service providers and data transfers</h2>
+      <table>
+        <tr>
+          <th>Cloudflare</th>
+          <td>Receives submitted data through the HTTPS Worker, determines approximate country, and stores device/country statistics, error records, feedback, and delivery metadata in D1. The Worker serves the access-controlled management panel and retrieves attached images from Telegram.</td>
+        </tr>
+        <tr>
+          <th>Telegram</th>
+          <td>Technical events, feedback, optional screenshots, and error-report documents are delivered to the developer's private bot/chat.</td>
+        </tr>
+        <tr>
+          <th>Microsoft</th>
+          <td>Used for Store distribution, licensing/purchase, updates, and Windows notification/startup functionality.</td>
+        </tr>
+      </table>
+      <p>
+        These providers may operate infrastructure in different countries. When a connection is
+        made, the provider may process the IP address and standard HTTP connection information under
+        its own service policies. The App developer does not sell personal data to advertising
+        networks or data brokers.
+      </p>
+      <p>
+        Provider information: <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>,
+        <a href="https://telegram.org/privacy">Telegram Privacy Policy</a>, and
+        <a href="https://privacy.microsoft.com/privacystatement">Microsoft Privacy Statement</a>.
+        These links describe provider practices; they are not a statement that a particular
+        international-transfer safeguard or data location has been verified for this App.
+      </p>
+    </section>
+
+    <section id="en-retention">
+      <h2>12. Retention and deletion</h2>
+      <ul>
+        <li><strong>Local settings and history:</strong> retained until you clear them, delete the related files, or remove the App data.</li>
+        <li><strong>Logs and temporary crash traces:</strong> retained according to size limits, rotation, and next-session cleanup rules.</li>
+        <li><strong>Local retry queues:</strong> ordinary error and technical-event entries have a seven-day retry eligibility limit. Expiry is evaluated when the queue is processed, not by a continuously running deletion service. Diagnostic backups of unreadable queue files have no automatic deletion period.</li>
+        <li><strong>Pseudonymous identifier:</strong> may survive uninstall or deletion of a single copy. See section 4 for all storage locations.</li>
+        
+        <li><strong>D1 device timeline:</strong> entries older than 180 days are removed when new timeline activity is recorded.</li>
+        <li><strong>D1 error-notification throttling log:</strong> entries older than seven days are removed during subsequent notification processing. This does not delete the underlying error groups or samples.</li>
+        <li><strong>Other D1 records:</strong> device/country statistics, error groups and samples, feedback, and notification-delivery records currently have no fixed automatic deletion period and remain until the developer deletes them.</li>
+        <li><strong>Database exports/backups:</strong> a database export made before deletion may retain earlier records. Such copies currently have no fixed automatic deletion period; deleting a record from the active database does not erase it from an existing export or backup. A deletion request should also identify backup copies for assessment.</li>
+        <li><strong>Telegram:</strong> transmitted messages, screenshots, and error documents have no App-managed automatic deletion period and may remain until deleted by the developer.</li>
+      </ul>
+      <p>
+        Cleanup triggered by a new operation does not guarantee deletion exactly when a period
+        expires. Deleting feedback from the management panel removes its D1 record and associated
+        feedback timeline entries, not the corresponding Telegram message or image. A deletion
+        request should cover both D1 and Telegram if both copies are to be removed. Deleting local
+        App data likewise does not erase previously transmitted records.
+      </p>
+    </section>
+
+    <section id="en-security">
+      <h2>13. Data security</h2>
+      <ul>
+        <li>Data is transmitted from the App to the Worker over HTTPS.</li>
+        <li>The Telegram bot token and chat identifier are not embedded in the App package; they are held as Worker secrets.</li>
+        <li>The pseudonymous identifier is protected with Windows DPAPI.</li>
+        <li>Local paths in error details are masked before transmission.</li>
+        <li>Management-panel records and screenshot retrieval require administrative access. Optional screenshots are not covered by error-text masking.</li>
+        <li>Core automation continues to operate locally when the Worker or Telegram is unavailable.</li>
+      </ul>
+      <p>
+        No internet transmission or electronic storage method can guarantee absolute security.
+        Reasonable technical measures are used, but zero risk cannot be promised.
+      </p>
+    </section>
+
+    <section id="en-rights">
+      <h2>14. Your choices and rights</h2>
+      <ul>
+        <li>You can disable error/crash reporting in Settings; the automatic events in section 5 remain active.</li>
+        <li>You can choose not to submit feedback or a language request, and remove an optional screenshot before sending.</li>
+        <li>You can clear local action history from within the App.</li>
+        <li>You can remove local settings/history by deleting the relevant App-data folder while the App is closed. This does not remove every identifier copy described in section 4 or any remote records.</li>
+        <li>You may request deletion of D1 or Telegram records associated with your pseudonymous identifier by email.</li>
+        <li>Depending on your jurisdiction, you may have rights of access, correction, deletion, restriction, or objection.</li>
+      </ul>
+      <p>
+        Because the pseudonymous identifier is not stored against your real name, you may need to
+        provide the <code>SAS-...</code> identifier shown by your App so that a particular remote
+        record can be located. Additional verification may be requested when assessing a request.
+      </p>
+      <p>
+        Contact us at <a href="mailto:idyllesoft@outlook.com">idyllesoft@outlook.com</a>, stating
+        the request and relevant identifier, version, or approximate event time. Share only what
+        is necessary to locate the records and verify the request. Requests will be assessed under
+        applicable law and its response deadlines. Where applicable, rights may also include data
+        portability, withdrawal of consent for consent-based processing, and a complaint to your
+        competent data-protection authority. In Türkiye this is the Personal Data Protection
+        Authority (KVKK); in the EEA, your competent national supervisory authority. These rights
+        depend on the law and processing basis that apply.
+      </p>
+    </section>
+
+    <section id="en-children">
+      <h2>15. Children's privacy</h2>
+      <p>
+        The App is not designed as a service directed to children and does not knowingly request
+        personal data from children. If you believe that a child's information was sent by mistake,
+        you may contact us to request deletion.
+      </p>
+    </section>
+
+    <section id="en-changes">
+      <h2>16. Changes to this policy</h2>
+      <p>
+        This policy may be updated when App features or data-processing practices change. The last
+        updated date will be revised in the new text. Material changes may be announced through an
+        appropriate in-App notice, website notice, or release note.
+      </p>
+    </section>
+
+    <section id="en-contact">
+      <h2>17. Contact</h2>
+      <p>
+        For privacy questions and access or deletion requests:<br>
+        <strong>Idylle Soft</strong><br>
+        <a href="mailto:idyllesoft@outlook.com">idyllesoft@outlook.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2026 Idylle Soft · Auto Shutdown &amp; Scheduler</p>
+    </footer>
+  </article>
+
+  <article id="policy-tr" lang="tr" hidden>
+  <header>
+    <span class="etiket">Resmî gizlilik politikası</span>
+    <h1>Gizlilik Politikası</h1>
+    <p class="meta">
+      <strong>Uygulama:</strong> Auto Shutdown &amp; Scheduler<br>
+      <strong>Geliştirici:</strong> Idylle Soft<br>
+      <strong>Son güncelleme:</strong> 10 Ekim 2026
+    </p>
+    <div class="ozet">
+      <strong>Kısa özet:</strong> Uygulama hesap açmanızı istemez, reklam göstermez ve kişisel
+      dosyalarınızı kendiliğinden buluta yüklemez. Otomasyonlar cihazınızda çalışır. Bununla birlikte uygulama;
+      açılış istatistikleri, belirli ürün etkileşimleri, sizin gönderdiğiniz geri
+      bildirimler ve açık bırakılmışsa hata raporları için sınırlı teknik verileri Cloudflare Worker
+      üzerinden geliştiricinin özel Telegram sohbetine iletebilir ve Cloudflare D1 veritabanında saklayabilir.
+      Geri bildirime kendi seçiminizle isteğe bağlı ekran görüntüsü ekleyebilirsiniz. Hata raporlamayı
+      kapatmak açılış, ürün etkileşimi bildirimlerini kapatmaz. Cloudflare, bağlantının IP
+      adresinden yalnızca yaklaşık ülke adını belirler; IP adresi Telegram mesajına veya uygulamanın
+      Cloudflare D1 kaydına eklenmez.
+    </div>
+  </header>
+
+  <nav aria-label="İçindekiler">
+    <h2>İçindekiler</h2>
+    <ol>
+      <li><a href="#kapsam">Kapsam ve veri sorumlusu</a></li>
+      <li><a href="#ilkeler">Temel ilkeler</a></li>
+      <li><a href="#yerel">Cihazda saklanan veriler</a></li>
+      <li><a href="#kimlik">Takma ad kimliği</a></li>
+      <li><a href="#otomatik">Otomatik teknik olaylar</a></li>
+      <li><a href="#gecmis">Yerel işlem geçmişi</a></li>
+      <li><a href="#geri-bildirim">Geri bildirim ve dil isteği</a></li>
+      <li><a href="#hata">Hata raporları</a></li>
+      <li><a href="#satin-alma">Pro ve Microsoft Store</a></li>
+      <li><a href="#guncelleme">Güncelleme kontrolleri</a></li>
+      <li><a href="#ucuncu-taraflar">Hizmet sağlayıcılar</a></li>
+      <li><a href="#saklama">Saklama ve silme</a></li>
+      <li><a href="#guvenlik">Güvenlik</a></li>
+      <li><a href="#haklar">Tercihleriniz ve haklarınız</a></li>
+      <li><a href="#cocuklar">Çocukların gizliliği</a></li>
+      <li><a href="#degisiklikler">Politika değişiklikleri</a></li>
+      <li><a href="#iletisim">İletişim</a></li>
+    </ol>
+  </nav>
+
+  <section id="kapsam">
+    <h2>1. Kapsam ve veri sorumlusu</h2>
+    <p>
+      Bu politika, Idylle Soft tarafından Microsoft Store üzerinden
+      sunulan Auto Shutdown &amp; Scheduler Windows masaüstü uygulamasının Free ve Pro
+      sürümlerindeki veri işlemeyi açıklar. Uygulamanın yerel çalışmasını, Cloudflare Worker üzerinden
+      iletilen bildirimleri, D1 ve geliştiricinin yönetim panelindeki kayıtları, Telegram mesaj ve
+      eklerini ve ilgili sürümlerde Microsoft Store işlemlerini kapsar.
+    </p>
+    <p>
+      Bu politikayla ilgili sorular ve veri talepleri için sorumlu iletişim adresi
+      <a href="mailto:idyllesoft@outlook.com">idyllesoft@outlook.com</a>'dur.
+    </p>
+  </section>
+
+  <section id="ilkeler">
+    <h2>2. Temel ilkeler</h2>
+    <ul>
+      <li>Uygulamayı kullanmak için hesap, üyelik veya bulut oturumu gerekmez.</li>
+      <li>Timer, Schedule, Routine, monitörler ve özel kurallar cihazınızda çalışır.</li>
+      <li>Reklam gösterilmez; kişisel veriler reklam amacıyla satılmaz veya kiralanmaz.</li>
+      <li>Kişisel dosya içerikleri kendiliğinden yüklenmez. İşlem durdurma koruması parolası ve Microsoft hesabı giriş bilgileri geliştiriciye gönderilmez. Geri bildirim metnine veya eklediğiniz ekran görüntüsüne gönüllü olarak dahil ettiğiniz bilgiler gönderimle birlikte iletilir.</li>
+      <li>İletilen veri, aşağıda açıklanan amaçlarla sınırlıdır.</li>
+    </ul>
+  </section>
+
+  <section id="yerel">
+    <h2>3. Cihazınızda saklanan veriler</h2>
+    <table>
+      <tr>
+        <th>Ayarlar</th>
+        <td>Dil, eşikler, seçilen işlem, bildirim, widget, uyarı ve benzeri tercihler yerel ayar dosyasında saklanır.</td>
+      </tr>
+      <tr>
+        <th>İşlem geçmişi</th>
+        <td>Son 100 çalışma; kaynak, işlem, durum, zaman ve sınırlı yapılandırma özetiyle yalnızca cihazınızda tutulur.</td>
+      </tr>
+      <tr>
+        <th>Günlükler</th>
+        <td>Çalışma ve teşhis kayıtları boyutu sınırlı yerel log dosyalarında saklanır.</td>
+      </tr>
+      <tr>
+        <th>Hata kuyruğu</th>
+        <td>Gönderilemeyen hata raporları daha sonra yeniden denenmek üzere yerel dosyada bekletilebilir; aynı hatalar birleştirilebilir.</td>
+      </tr>
+      <tr>
+        <th>Teknik olay kuyruğu</th>
+        <td>İletilemeyen açılış, ürün etkileşimi olayları yeniden denemek için yerelde saklanabilir. Olay kimlikleri ve teslim durumu mükerrer bildirimleri önlemeye yardımcı olur.</td>
+      </tr>
+      
+      <tr>
+        <th>Parola</th>
+        <td>Parola koruması için belirlediğiniz parola yalnızca uygulama belleğinde tutulur ve uygulama kapandığında unutulur.</td>
+      </tr>
+    </table>
+    <p>
+      Bu kayıtların çoğu <code>%LOCALAPPDATA%\OtomatikKapatici\</code> altında bulunur. Windows ile
+      başlatma tercihi, dağıtım türüne göre Windows StartupTask altyapısında veya mevcut Windows
+      kullanıcısına ait Registry alanında tutulabilir.
+    </p>
+    <p>Bu politika sayfası yalnızca seçtiğiniz politika dilini tarayıcının yerel depolamasında (<code>sas-privacy-language</code>) tutar. Bu tercih geliştiriciye gönderilmez.</p>
+  </section>
+
+  <section id="kimlik">
+    <h2>4. Kalıcı takma ad kimliği</h2>
+    <p>
+      Uygulama, aynı Windows kullanıcı profilinden gelen sınırlı olayları birbirinden ayırt etmek
+      için <code>SAS-XXXX-XXXX-XXXX-XXXX</code> biçiminde rastgele bir takma ad kimliği oluşturur.
+      Bu kimlik bir donanım parmak izi değildir; adınızı, e-posta adresinizi, Microsoft hesabınızı,
+      kullanıcı adınızı, bilgisayar adınızı, dosya yolunuzu, IP adresinizi veya cihaz seri numaranızı içermez.
+    </p>
+    <p>
+      Kimlik Windows DPAPI ile korunur; mevcut kullanıcının Registry alanına,
+      <code>%PROGRAMDATA%\IdylleSoft\Smart Auto Shutdown &amp; Scheduler\telemetry_device_id.dat</code>
+      dosyasına ve <code>%LOCALAPPDATA%\Packages\</code> altındaki Store paketinin
+      <code>LocalState</code> veya <code>LocalCache\Local\IdylleSoft</code> klasörlerine,
+      yazılabildikleri ölçüde kaydedilebilir. Kopyalar birbirini geri yükleyebilir. Uygulamayı
+      kaldırmak veya tek bir kopyayı silmek kimliği sıfırlamayabilir. Kullanılabilir hiçbir kopya
+      kurtarılamadığında yeni kimlik oluşturulur.
+    </p>
+    <p>
+      Olaylar zaman içinde aynı kimlikle ilişkilendirilebilir. Bu kayıtlar takma adlıdır; geri
+      döndürülemez biçimde anonim oldukları garanti edilmez. Yerel kopyaları silmek D1 veya
+      Telegram'da daha önce saklanmış kayıtları silmez.
+    </p>
+  </section>
+
+  <section id="otomatik">
+    <h2>5. Otomatik teknik olaylar ve ürün etkileşimleri</h2>
+    <p>
+      Uygulamanın çalışmasını ve özelliklerin kullanımını istatistiksel olarak anlayabilmek için
+      aşağıdaki olaylardan bazıları otomatik olarak geliştiriciye iletilebilir:
+    </p>
+    <ul>
+      <li>Uygulama açılışı ve sürüm türü (Free veya Pro); açılış olayı tek başına arayüzün sağlıklı açıldığını doğrulamaz</li>
+      
+      <li>Pro'yu keşfetmeyi seçtiğinizde teklif ekranının görüntülenmesi veya kapatma düğmesiyle kapatılması; teklif ilk açılışta veya uygulama sistem tepsisinden geri getirildiğinde otomatik gösterilmez</li>
+      <li>Güncelleme önerisinde “Şimdi güncelle” veya “Daha sonra” seçiminin yapılması</li>
+      <li>Hakkında ekranından ürün web sitesinin açılması</li>
+      <li>Ay görselinden değerlendirme penceresinin açılması</li>
+      <li>Değerlendirme penceresinin gösterilmesi ve kullanıcının değerlendirme/erteleme seçimi</li>
+    </ul>
+    
+    <h3>Bu olaylara eşlik edebilen teknik alanlar</h3>
+    <ul>
+      <li>Uygulama sürümü ve takma ad kimliği</li>
+      <li>Windows sürümü</li>
+      <li>Uygulama dili ve Windows sistem dili</li>
+      <li>Cloudflare tarafından yaklaşık olarak belirlenen ülke adı ve ülke kodu</li>
+    </ul>
+    <p>
+      Uygulama şehir, ilçe, posta kodu, sokak adresi, GPS konumu veya koordinat toplamaz. Kaynak IP
+      adresi, internet bağlantısının kurulması sırasında Cloudflare tarafından teknik olarak görülür
+      ve ülke tespiti için kullanılır; geliştiricinin Telegram mesajına ve Cloudflare D1 kaydına IP
+      adresi eklenmez.
+    </p>
+    <p>
+      D1'de kimlik, ilk/son görülme zamanı, açılış sayısı, sürüm, ülke ve son olay; ülke bazlı cihaz
+      istatistikleri; açılış, kritik hata ve
+      geri bildirim olaylarından oluşan cihazla ilişkilendirilmiş zaman çizelgesi saklanabilir.
+      Olay ve teslim kimlikleri, zamanları ve teslim durumu yeniden deneme ve tekilleştirme için
+      kullanılır. Geliştirici, erişim kontrollü yönetim panelinde açılış sorunlarını incelemek,
+      tekrarlayan hataları takip etmek ve toplu kullanım istatistiklerini görmek için bu kayıtlara erişebilir.
+    </p>
+    <div class="ozet">
+      <strong>Hata raporlama anahtarının kapsamı:</strong> Yalnızca hata/çökme raporlarını kontrol eder.
+      Otomatik açılış ve ürün etkileşimi bildirimlerini kapatmaz. Arayüzün hazır olma süresi,
+      sağlık ölçümü olarak JavaScript hata/kurtarma sayıları, oturum takibi ve periyodik nabız
+      verileri artık iletilmez. Mevcut uygulamada kalan otomatik olaylar için ayrı bir kapatma
+      anahtarı yoktur. Yerel teknik olay kuyruğu hata raporlama kapatıldıktan sonra da bu olayları
+      yeniden göndermeyi deneyebilir.
+    </div>
+  </section>
+
+  <section id="gecmis">
+    <h2>6. Yerel işlem geçmişi</h2>
+    <p>
+      Son 100 otomasyon geçmişi kaydı yerelde tutulur. Mevcut bildirim servisi işlem geçmişi
+      olaylarını Telegram'a iletmez veya uzak işlem geçmişi olarak saklamaz; eski sürümlerden
+      kuyrukta kalan işlem geçmişi olayları kabul edilip yok sayılır. Bundan ayrı olarak, hata
+      raporlama açıksa bir hata raporunda 8. bölümde açıklanan aktif görev türü ve teşhis bilgileri
+      bulunabilir. Bu, yerel işlem geçmişinin uzaktaki kopyası değildir.
+    </p>
+  </section>
+
+  <section id="geri-bildirim">
+    <h2>7. Geri bildirim ve yeni dil isteği</h2>
+    <p>
+      Geri bildirim veya yeni dil isteği yalnızca siz gönder düğmesine bastığınızda iletilir. Hata
+      raporlama ayarını kapatmanız, sizin başlattığınız bu gönderimi engellemez.
+    </p>
+    <p>Gönderim aşağıdaki verileri içerebilir:</p>
+    <ul>
+      <li>Yazdığınız mesaj, seçtiğiniz kategori veya istediğiniz dil</li>
+      <li>Uygulama sürümü, takma ad kimliği, uygulama dili ve sistem dili</li>
+      <li>Windows sürümü/build, mimari, ekran çözünürlüğü, DPI/ölçeklendirme ve WebView2 sürümü</li>
+      <li>Cloudflare tarafından belirlenen ülke adı</li>
+    </ul>
+    <p>
+      Mesajınıza kendi isteğinizle ad, e-posta veya başka kişisel bilgiler yazarsanız bunlar mesajın
+      parçası olarak iletilir. Uygulama sizden bu bilgileri yazmanızı istemez.
+    </p>
+    <h3>İsteğe bağlı ekran görüntüsü</h3>
+    <p>
+      Ekran görüntüsü yalnızca ilgili seçeneği kullandığınızda alınır. Yakalama tüm masaüstünü değil,
+      uygulama penceresinin ekrandaki dikdörtgen alanını hedefler. Bu alanın üzerine gelen başka
+      içerikler de görünür olabilir. Göndermeden önce eki önizleyebilir veya kaldırabilirsiniz.
+      Görüntüyü almak ya da önizlemek tek başına yükleme yapmaz; ek dahil edilmiş geri bildirimi
+      gönderdiğinizde görüntü iletilir.
+    </p>
+    <p>
+      Ekran görüntüleri otomatik olarak maskelenmez. Görünen metinler, dosya/program adları veya
+      kişisel bilgiler görüntüye dahil olabilir. Görseli kontrol edin; parola veya başka hassas
+      bilgiler göndermeyin. Geri bildirim ve ekler Cloudflare Worker üzerinden geliştiricinin özel
+      Telegram sohbetine iletilir. D1'de geri bildirim metni, kategori, teknik bilgiler, kimlik,
+      sürüm, diller, ülke, gönderim zamanı ve ek bilgileri saklanır. Görselin kendisi D1'de resim
+      olarak değil Telegram'da tutulur; Telegram dosya kimliği, erişim kontrollü yönetim panelinin
+      görseli Worker üzerinden alıp göstermesine olanak sağlar.
+    </p>
+  </section>
+
+  <section id="hata">
+    <h2>8. Hata ve çökme raporları</h2>
+    <p>
+      Güncel uygulama sürümleri yalnızca doğrudan teknik kanıtı bulunan kritik hataları raporlar.
+      Arayüz sağlığı ve oturum telemetrisi sonlandırılmıştır. Başarılı kurtarma veya nabız
+      verisinin gelmemesi hata raporu oluşturmaz. Daha önce toplanan sağlık/oturum kayıtları ve
+      bunlara ait tablolar aktif D1 veritabanından kaldırılmıştır. Eski sürümlerden gelen sağlık
+      ve oturum olayları yeni kayıt veya Telegram bildirimi üretilmeden kabul edilip yok sayılır.
+      Aktif D1 kayıtlarının silinmesi, daha önce gönderilmiş Telegram mesajlarını veya
+      yedeklerdeki kopyaları otomatik olarak silmez.
+    </p>
+    <div class="ozet">
+      <strong>Varsayılan durum: açık.</strong> Ayarlar bölümündeki anonim hata raporu adlı seçenekten kapatabilirsiniz. Raporlar takma ad kimliğiyle ilişkilendirilebilir; geri döndürülemez biçimde anonim oldukları garanti edilmez.
+    </div>
+    <p>Yalnızca teknik kanıtı bulunan kritik hatalar (açılış, motor, Windows işlem komutu, kurtarılamayan WebView2 veya ölümcül native hata) raporlanır. Raporlar JSON belgesi olarak Telegram'a gönderilir ve D1'de gruplanır. Ağ yoksa sınırlı yerel kuyrukta saklanıp yeniden denenir.</p>
+    <p>
+      Worker ayrıca hata gruplarını, teşhis örneklerini, tekrar sayılarını, ilk/son görülme
+      zamanlarını ve cihaz ilişkilerini erişim kontrollü yönetim panelinde incelemek için D1'de
+      saklar. Hata raporlama kapatıldığında bekleyen yerel hata kuyruğu temizlenir; daha önce
+      iletilmiş raporlar veya 5. bölümdeki ayrı teknik olay kuyruğu silinmez.
+    </p>
+    <p>Bir hata raporu şunları içerebilir:</p>
+    <ul>
+      <li>Hata başlığı, temizlenmiş hata ayrıntısı ve traceback</li>
+      <li>Uygulama, Python, Windows ve WebView2 sürümleri</li>
+      <li>Mimari, çekirdek sayısı, bellek ve anlık CPU gibi teşhis bilgileri</li>
+      <li>Gözlenen kritik hata, teknik kanıt, derleme kimliği ve sınırlı tanılama günlükleri</li>
+      <li>Takma ad kimliği, uygulama/sistem dili ve ülke adı</li>
+    </ul>
+    <p>
+      Kullanıcı adı, bilgisayar adı ve dosya yolları gönderilmeden önce maskelenmek üzere işlenir.
+      İzlenen program adı, seçilen dosya yolu ve kişisel dosya içeriği hata raporunun amacı değildir
+      ve bilerek eklenmez. Bununla birlikte hiçbir otomatik maskeleme yönteminin her serbest biçimli
+      hata metninde mutlak sonuç garanti edemeyeceği dikkate alınmalıdır.
+    </p>
+  </section>
+
+  <section id="satin-alma">
+    <h2>9. Pro satın alma ve Microsoft Store</h2>
+    <p>
+      Pro satın alma akışını başlattığınızda pencerenin açıldığı ve işlemin başarılı, iptal edilmiş,
+      tamamlanmamış veya başlatılamamış olduğu geliştiriciye bildirilebilir. Bildirim uygulama sürümü,
+      takma ad kimliği, teknik ortam bilgileri, ülke adı ve Microsoft Store sonuç kodunu içerebilir.
+    </p>
+    <p>
+      Ödeme Microsoft tarafından yürütülür. Uygulama kart numarası, ödeme bilgisi veya Microsoft
+      hesabı parolası görmez ve saklamaz. Microsoft Store'un gerçekleştirdiği işlemler Microsoft'un
+      kendi gizlilik koşullarına tabidir.
+    </p>
+  </section>
+
+  <section id="guncelleme">
+    <h2>10. Sürüm ve güncelleme kontrolleri</h2>
+    <ul>
+      <li>Microsoft Store sürümü, Windows/Microsoft Store altyapısı üzerinden güncelleme durumunu kontrol edebilir.</li>
+      <li>Güncelleme bağlantısını açmayı seçerseniz Microsoft Store kendi standart bağlantı verilerini işleyebilir.</li>
+      <li>Güncelleme modalında verdiğiniz “Şimdi güncelle” veya “Daha sonra” tepkisi ürün olayı olarak bildirilebilir.</li>
+    </ul>
+  </section>
+
+  <section id="ucuncu-taraflar">
+    <h2>11. Hizmet sağlayıcılar ve veri aktarımı</h2>
+    <table>
+      <tr>
+        <th>Cloudflare</th>
+        <td>Verileri HTTPS Worker üzerinden alır, yaklaşık ülkeyi belirler; cihaz/ülke istatistiklerini, hataları, geri bildirimleri ve teslim bilgilerini D1'de saklar. Worker erişim kontrollü yönetim panelini sunar ve eklenen görselleri Telegram'dan alır.</td>
+      </tr>
+      <tr>
+        <th>Telegram</th>
+        <td>Teknik olaylar, geri bildirimler, isteğe bağlı ekran görüntüleri ve hata raporu belgeleri geliştiricinin özel bot/sohbetine iletilir.</td>
+      </tr>
+      <tr>
+        <th>Microsoft</th>
+        <td>Store dağıtımı, lisans/satın alma, güncelleme ve Windows bildirim/başlangıç özellikleri için kullanılır.</td>
+      </tr>
+    </table>
+    <p>
+      Bu sağlayıcılar farklı ülkelerde altyapı kullanabilir. Bağlantı kurulduğunda IP adresi ve standart
+      HTTP bağlantı bilgileri ilgili sağlayıcı tarafından kendi hizmet politikaları kapsamında
+      işlenebilir. Uygulama geliştiricisi kişisel verileri reklam ağına veya veri komisyoncusuna satmaz.
+    </p>
+    <p>
+      Sağlayıcı bilgileri: <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Gizlilik Politikası</a>,
+      <a href="https://telegram.org/privacy">Telegram Gizlilik Politikası</a> ve
+      <a href="https://privacy.microsoft.com/privacystatement">Microsoft Gizlilik Bildirimi</a>.
+      Bu bağlantılar sağlayıcıların uygulamalarını açıklar; uygulamaya özgü belirli bir yurt dışı
+      aktarım güvencesinin veya veri saklama ülkesinin doğrulandığı anlamına gelmez.
+    </p>
+  </section>
+
+  <section id="saklama">
+    <h2>12. Saklama süreleri ve silme</h2>
+    <ul>
+      <li><strong>Yerel ayarlar ve geçmiş:</strong> Siz temizleyene, ilgili dosyaları silene veya uygulama verileri kaldırılana kadar saklanır.</li>
+      <li><strong>Log ve geçici çökme izleri:</strong> Boyut sınırı, döndürme ve yeni oturumdaki temizleme kurallarına göre saklanır.</li>
+      <li><strong>Yerel yeniden deneme kuyrukları:</strong> Normal hata ve teknik olay kayıtlarının yeniden gönderime uygunluğu yedi günle sınırlıdır. Süre aşımı kuyruk işlenirken değerlendirilir; sürekli çalışan bir silme servisi yoktur. Okunamayan kuyruk dosyalarının teşhis yedekleri için otomatik silme süresi yoktur.</li>
+      <li><strong>Takma ad kimliği:</strong> Uygulama kaldırıldıktan veya tek kopyası silindikten sonra kalabilir. Tüm konumlar için 4. bölüme bakın.</li>
+      
+      <li><strong>D1 cihaz zaman çizelgesi:</strong> Yeni çizelge olayı kaydedilirken 180 günden eski kayıtlar silinir.</li>
+      
+      <li><strong>D1 hata bildirimi sıklık günlüğü:</strong> Sonraki bildirim işlenirken yedi günden eski kayıtlar temizlenir. Bu işlem asıl hata gruplarını veya örneklerini silmez.</li>
+      <li><strong>Diğer D1 kayıtları:</strong> Cihaz/ülke istatistikleri, hata grupları ve örnekleri, geri bildirimler ve bildirim teslim kayıtları için şu anda sabit otomatik silme süresi yoktur; geliştirici silene kadar tutulurlar.</li>
+      <li><strong>Veritabanı dışa aktarımları/yedekleri:</strong> Silme işleminden önce alınmış bir dışa aktarım eski kayıtları içerebilir. Bu kopyalar için şu anda sabit otomatik silme süresi yoktur; aktif veritabanından bir kaydı silmek mevcut dışa aktarım veya yedekteki kopyasını silmez. Silme talebinde yedek kopyaların da değerlendirilmesi belirtilmelidir.</li>
+      <li><strong>Telegram:</strong> İletilen mesajlar, ekran görüntüleri ve hata belgeleri için uygulamanın yönettiği otomatik silme süresi yoktur; geliştirici silene kadar kalabilirler.</li>
+    </ul>
+    <p>
+      Yeni işlemle tetiklenen temizlik, süre dolduğu anda silinmeyi garanti etmez. Yönetim panelinden
+      geri bildirim silmek, D1 kaydını ve ilişkili geri bildirim çizelge kayıtlarını siler; Telegram'daki
+      mesajı veya görseli silmez. Her iki kopyanın da silinmesi isteniyorsa talepte D1 ve Telegram
+      birlikte belirtilmelidir. Yerel uygulama verilerini silmek de daha önce iletilmiş kayıtları silmez.
+    </p>
+  </section>
+
+  <section id="guvenlik">
+    <h2>13. Veri güvenliği</h2>
+    <ul>
+      <li>Uygulamadan Worker'a veri aktarımı HTTPS üzerinden yapılır.</li>
+      <li>Telegram bot anahtarı ve sohbet kimliği uygulama paketine gömülmez; Worker gizli değişkenlerinde tutulur.</li>
+      <li>Takma ad kimliği Windows DPAPI ile korunur.</li>
+      <li>Hata ayrıntılarındaki yerel yollar gönderimden önce maskelenir.</li>
+      <li>Yönetim paneli kayıtları ve ekran görüntülerine erişim yönetici doğrulaması gerektirir. İsteğe bağlı ekran görüntüleri hata metni maskelemesine tabi değildir.</li>
+      <li>Uygulamanın temel otomasyon işlevleri Worker veya Telegram kullanılamadığında yerel olarak çalışmaya devam eder.</li>
+    </ul>
+    <p>
+      İnternet üzerinden yapılan hiçbir aktarım veya elektronik saklama yöntemi mutlak güvenlik
+      garanti etmez. Makul teknik önlemler uygulanmasına rağmen sıfır risk taahhüt edilemez.
+    </p>
+  </section>
+
+  <section id="haklar">
+    <h2>14. Tercihleriniz ve haklarınız</h2>
+    <ul>
+      <li>Ayarlar bölümünden hata/çökme raporlamayı kapatabilirsiniz; 5. bölümdeki otomatik olaylar açık kalır.</li>
+      <li>Geri bildirim veya dil isteği göndermemeyi seçebilir, isteğe bağlı ekran görüntüsünü göndermeden önce kaldırabilirsiniz.</li>
+      <li>Yerel işlem geçmişini uygulama içinden temizleyebilirsiniz.</li>
+      <li>Uygulama kapalıyken ilgili uygulama veri klasörünü silerek yerel ayarları/geçmişi kaldırabilirsiniz. Bu işlem 4. bölümdeki tüm kimlik kopyalarını veya uzaktaki kayıtları silmez.</li>
+      <li>Takma ad kimliğiyle ilişkili D1 veya Telegram kaydının silinmesini e-posta yoluyla talep edebilirsiniz.</li>
+      <li>Bulunduğunuz ülkenin mevzuatına göre erişim, düzeltme, silme, işlemeyi sınırlama veya itiraz haklarına sahip olabilirsiniz.</li>
+    </ul>
+    <p>
+      Takma ad kimliği gerçek adınıza bağlı tutulmadığından, uzaktaki belirli bir kaydı bulabilmek için
+      talebinizde uygulamanızdaki <code>SAS-...</code> kimliğini paylaşmanız gerekebilir. Talep
+      değerlendirilirken ek doğrulama istenebilir.
+    </p>
+    <p>
+      Talebinizi ve ilgili kimlik, sürüm veya yaklaşık olay zamanını
+      <a href="mailto:idyllesoft@outlook.com">idyllesoft@outlook.com</a> adresine iletebilirsiniz.
+      Kayıtları bulmak ve başvuruyu doğrulamak için gerekli olan bilgilerle sınırlı paylaşım yapın.
+      Talepler uygulanabilir mevzuat ve cevap sürelerine göre değerlendirilir. Uygulanabildiği
+      durumlarda veri taşınabilirliği, rızaya dayalı işleme için rızayı geri çekme ve yetkili veri
+      koruma makamına şikâyet hakları da bulunabilir. Türkiye'de yetkili makam Kişisel Verileri
+      Koruma Kurumu (KVKK), Avrupa Ekonomik Alanı'nda ilgili ulusal denetim makamıdır. Bu hakların
+      kapsamı uygulanabilir mevzuata ve veri işlemenin dayanağına bağlıdır.
+    </p>
+  </section>
+
+  <section id="cocuklar">
+    <h2>15. Çocukların gizliliği</h2>
+    <p>
+      Uygulama çocuklara yönelik bir hizmet olarak tasarlanmamıştır ve bilerek çocuklardan kişisel
+      veri istemez. Bir çocuğa ait verinin yanlışlıkla gönderildiğini düşünüyorsanız silme talebi için
+      bizimle iletişime geçebilirsiniz.
+    </p>
+  </section>
+
+  <section id="degisiklikler">
+    <h2>16. Bu politikadaki değişiklikler</h2>
+    <p>
+      Uygulamanın özellikleri veya veri işleme biçimi değiştiğinde bu politika güncellenebilir. Yeni
+      metinde son güncelleme tarihi değiştirilir. Önemli değişiklikler uygun bir uygulama içi bildirim,
+      web sitesi veya sürüm notu aracılığıyla duyurulabilir.
+    </p>
+  </section>
+
+  <section id="iletisim">
+    <h2>17. İletişim</h2>
+    <p>
+      Gizlilik soruları, erişim veya silme talepleri için:<br>
+      <strong>Idylle Soft</strong><br>
+      <a href="mailto:idyllesoft@outlook.com">idyllesoft@outlook.com</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Idylle Soft · Auto Shutdown &amp; Scheduler</p>
+  </footer>
+  </article>
+</main>
+<script>
+  (() => {
+    const STORAGE_KEY = "sas-privacy-language";
+    const supported = new Set(["en", "tr"]);
+    const articles = {
+      en: document.getElementById("policy-en"),
+      tr: document.getElementById("policy-tr")
+    };
+    const buttons = [...document.querySelectorAll("[data-language]")];
+
+    function setLanguage(language, remember = true) {
+      const selected = supported.has(language) ? language : "en";
+      Object.entries(articles).forEach(([code, article]) => {
+        article.hidden = code !== selected;
+      });
+      buttons.forEach(button => {
+        button.setAttribute("aria-pressed", String(button.dataset.language === selected));
+      });
+      document.documentElement.lang = selected;
+      document.title = selected === "tr"
+        ? "Gizlilik Politikası | Auto Shutdown & Scheduler"
+        : "Privacy Policy | Auto Shutdown & Scheduler";
+      if (remember) {
+        try { localStorage.setItem(STORAGE_KEY, selected); } catch (_) {}
+      }
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }
+
+    buttons.forEach(button => {
+      button.addEventListener("click", () => setLanguage(button.dataset.language));
+    });
+
+    let initialLanguage = "en";
+    try {
+      const savedLanguage = localStorage.getItem(STORAGE_KEY);
+      if (supported.has(savedLanguage)) initialLanguage = savedLanguage;
+    } catch (_) {}
+    setLanguage(initialLanguage, false);
+  })();
+</script>
+</body>
+</html>

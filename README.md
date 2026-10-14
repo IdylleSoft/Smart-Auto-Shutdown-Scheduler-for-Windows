@@ -11,7 +11,7 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 <p align="center">
   🧠 <strong>Smart Automation</strong>&nbsp;&nbsp;&nbsp; ⏱ <strong>Intelligent Timers</strong>&nbsp;&nbsp;&nbsp; 📅 <strong>Advanced Scheduling</strong>
   <br><br>
-  🌍 <strong>11 Languages</strong>&nbsp;&nbsp;&nbsp; 🔒 <strong>Privacy First</strong>&nbsp;&nbsp;&nbsp; ⚡ <strong>Microsoft Store</strong>
+  🌍 <strong>12 Languages</strong>&nbsp;&nbsp;&nbsp; 🔒 <strong>Privacy First</strong>&nbsp;&nbsp;&nbsp; ⚡ <strong>Microsoft Store</strong>
 </p>
 
 <br>
@@ -59,7 +59,7 @@ Designed specifically for Windows 10 and Windows 11.
 ## ✨ Highlights
 
 - 🧠 Smart Automation Engine
-- 🌍 Supports 11 Languages
+- 🌍 Supports 12 Languages
 - 🌙 Dark Theme
 - ⚡ Lightweight & Fast
 - 🔒 Privacy Focused
@@ -291,7 +291,7 @@ For full details, see the <a href="https://idyllesoft.github.io/IdylleSoft-Priva
 
 Smart Auto Shutdown & Scheduler is designed for users worldwide.
 
-The application currently supports **11 languages**, allowing users to work comfortably in their native language.
+The application currently supports **12 languages**, allowing users to work comfortably in their native language.
 
 ### Supported Languages
 
@@ -316,6 +316,8 @@ The application currently supports **11 languages**, allowing users to work comf
 🇵🇱 Polish
 
 🇨🇳 Simplified Chinese
+
+🇰🇷 Korean (한국어)
 
 > More languages may be added in future updates.
 

@@ -16,20 +16,9 @@ Automate your computer with intelligent timers, schedules and system monitoring.
 
 <br>
 
-**Choose the version that fits you.**
+**Get the app from Microsoft Store.**
 
 </div>
-<p align="center">
-
-  <a href="https://github.com/IdylleSoft/Smart-Auto-Shutdown-Scheduler-for-Windows/releases/latest/download/Smart-Auto-Shutdown-Scheduler-Trial.msi">
-    <img src="https://img.shields.io/badge/TRY%20FULL%20PRO-15--DAY%20FREE%20TRIAL-FF7A00?style=for-the-badge&logo=windows&logoColor=white" alt="Try the full Pro version free for 15 days">
-  </a>
-  <br>
-  <sub>Every Pro feature · Standalone Windows app · No Microsoft Store account required</sub>
-</p>
-
-<br>
-
 <p align="center">
   <a href="https://apps.microsoft.com/detail/9N622WG5KQGD">
     <img src="https://img.shields.io/badge/GET%20FREE%20VERSION-MICROSOFT%20STORE-0078D4?style=for-the-badge&logo=microsoft&logoColor=white" alt="Get the free version from Microsoft Store">
